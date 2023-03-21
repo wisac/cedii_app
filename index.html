@@ -6,29 +6,37 @@
     <title>cedii</title>
 
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    
+
     <!-- TITLE SECTION -->
+    
     <section id="title">
-      <div class="">
-        <nav>
-          <div class="nav-brand">
-            <h1>Cedii</h1>
-          </div>
-          <div class="nav-item">
-            <ul type="none">
-              <li><a href="">Home</a></li>
-              <li><a href="">Buy</a></li>
-              <li><a href="">Sell</a></li>
-              <li><a href="">Help</a></li>
+      
+        <nav class="nav-container">
+            <!-- <h1 class="nav-brand"><span id="cedi">₵</span></h1> -->
+            <h1 class="nav-brand"><span id="cedi"><img src="images/My project small.png" </span>EDII</h1>
+          
+            <ul class="nav-menu"type="none">
+              <li><a  class="nav-link" href="">Home</a></li>
+              <li><a  class="nav-link" href="">Buy</a></li>
+              <li><a  class="nav-link" href="">Sell</a></li>
+              <li><a  class="nav-link" href="">Prices</a></li>
+              <li><a  class="nav-link" href="">Support</a></li>
+              <li><a  class="nav-link" href="">About Us</a></li>
+              <li><a  class="nav-link" href="">FAQ</a></li>
             </ul>
-          </div>
-          <div class="account">
+         
+          <div class="nav-cta">
             <button class="registration" id="log-in">LOG IN</button>
             <button class="registration" id="sign-up">SIGN UP</button>
           </div>
         </nav>
+
+
         <div class="featured-container">
           <div><img id="featured-image" src="" alt="" /></div>
           <div class="featured-message">
@@ -38,9 +46,10 @@
           </div>
           <button type="button" class="trade-btn">TRADE</button>
         </div>
-      </div>
+      
     </section>
     <hr />
+
 
     <!-- FEATURES SECTION -->
     <section id="features">
@@ -63,17 +72,7 @@
 
     <!-- LIVE PRICES SECTION -->
     <section id="pricing">
-      <!-- <table class="" id="assets">
-        <thead>
-            <th>Coin</th>
-            <th>Buy</th>
-            <th>Sell</th>
-
-            
-            
-        </thead>
-    </table> -->
-
+    
       <div class="coin" id="bitcoin">
         <h5>BitCoin</h5>
         <h5>Buy</h5>
@@ -216,5 +215,6 @@
       </div>
       <p>cedii ©2023</p>
     </footer>
+  
   </body>
 </html>
