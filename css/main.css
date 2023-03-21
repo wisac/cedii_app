@@ -22,8 +22,9 @@ a:hover{
     background-image: linear-gradient(to right,#8aea92,#2d3047) ;
 }
 
-h1,h2,h3 {
+h1,h2,h3, h4 {
     margin: 0;
+    
 }
 
 nav {
@@ -110,6 +111,8 @@ nav {
 
 .featured-container {
     margin-top: 0;
+   
+    
 }
 
 #cedi-sign {
@@ -133,14 +136,16 @@ nav {
 }
 
 .featured-message {
-    width: 50%;
+    width: 45%;
     position: absolute;
     top: 100px;
     z-index: 0;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     margin-top: 5%;
     margin-left: 5%;
+    padding: 2%;
     text-align: left;
+    border: solid rgba(45, 48, 71, 0.08) 10px;
     
 
     
@@ -153,13 +158,28 @@ nav {
     font-weight: bold;
     color:#50cb5af3;
     text-shadow: 2px 2px #2d3047;
+    /* background-color: rgba(45, 48, 71, 0.3) */
 }
 
 .small-title {
     margin: 0;
     color: #2d3047;
+    font-size: 2rem;
+    /* background-color: #2d3047; */
+    /* background-color: rgba(45, 48, 71, 0.3) */
+}
+
+.medium-title {
+    color:#2d3047;
+    font-size: 2rem;
+    /* background-color: #2d3047; */
+    /* background-color: rgba(45, 48, 71, 0.3) */
 }
 
 #crypto {
     color:#f7e40a;
+}
+
+.featured-container {
+    
 }
