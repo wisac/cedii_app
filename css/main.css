@@ -33,6 +33,7 @@ nav {
     right: 0;
     left: 0;
     top: 0;
+    z-index: 1;
     /* margin-bottom: 2px; */
     
 }
@@ -101,17 +102,64 @@ nav {
     color:#2d3047;
 }
 
+#log-in:hover, #sign-up:hover {
+    background-color:#96ee9dba;
+}
 
 
 
 .featured-container {
-    margin-top:100px;
+    margin-top: 0;
 }
 
-img {
+#cedi-sign {
     height: 31px;
     color:#f5ee9e;
     /* background-color:black; */
  
     filter: grayscale(50%)  ;  
+}
+
+#featured-image {
+     /* height: 1270px; */
+     height: 98%;
+     position: relative;
+     bottom: 200px;
+     width: 100%;
+     
+     
+     
+     /* height: 10%; */
+}
+
+.featured-message {
+    width: 50%;
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+    font-size: 2.5rem;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+    
+
+    
+   
+    
+    
+}
+
+.large-title {
+    font-weight: bold;
+    color:#50cb5af3;
+    text-shadow: 2px 2px #2d3047;
+}
+
+.small-title {
+    margin: 0;
+    color: #2d3047;
+}
+
+#crypto {
+    color:#f7e40a;
 }
