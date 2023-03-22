@@ -193,9 +193,12 @@ nav {
     font-size: 2rem;
     font-weight: bold;
     border-radius: 15px;
+    border-style: none;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.09), 0 5px  5px 0 rgba(0, 0, 0, 0.1);
 }
 
 .trade-btn:hover {
     background-color:#2d3047;
     color:white;
+    
 }
