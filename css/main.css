@@ -265,4 +265,42 @@ nav {
 }
 
 
+/*Testimonials*/
+
+#testimonials {
+    text-align: center;
+    margin: 10% 10%;
+   
+}
+
+.testimonial-container {
+    display: flex;
+margin:  2% 1%;
+}
+
+#testimonials h6 {
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+#testimonials p {
+    margin: 4%;
+    line-height: 1.2;
+}
+
+.testimonial-item {
+    width: 100%;
+    margin: 3%;
+    background-color: rgba(248, 241, 211, 0.5);
+    padding: 4%;
+
+    
+}
+
+
+.fa-star, .fa-star-half {
+    color:#ffbb00e4;
+    margin-bottom: 10%;
+} 
+
 
