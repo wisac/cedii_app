@@ -199,6 +199,70 @@ nav {
 
 .trade-btn:hover {
     background-color:#2d3047;
-    color:white;
+    color: white;
     
 }
+
+
+/*FEATURES SECTION*/
+
+#features {
+    text-align: center;
+    margin-top: 8%;
+    
+}
+
+.features-container {
+    display: flex;
+   
+    justify-content: center;
+    margin: 2% 10%;
+    padding: 0 5%;
+}
+
+.feature-item {
+    margin: auto 5%;
+
+}
+
+
+/*PRICES SECTION*/
+
+#pricing {
+    display: flex;
+    justify-content: center;
+    background-color: #2d3047;
+    color: #fff;
+    padding: 5%;
+
+    
+}
+
+.coin {
+    text-align: center;
+    padding: 2%;
+    font-size: 2rem;
+    border: solid  1px rgb(24, 26, 39);
+    border-radius: 15px;
+    background-color: #383c5d;
+    
+    margin: auto 1%;
+}
+
+.coin:hover {
+    background-color: #585d8a;
+}
+  
+
+.coin-icon {
+    height: 200px;
+    
+}
+
+#pricing .trade-btn {
+    position: static;
+    margin: auto;
+}
+
+
+
