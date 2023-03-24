@@ -13,12 +13,12 @@ body {
 /* font-family: 'Quicksand', sans-serif; */
 }
 
-a {
+ #title a  {
     color: #fafdf6;
     text-decoration: none;
 }
 
-a:hover{
+#title a:hover{
     background-image: linear-gradient(to right,#8aea92,#2d3047) ;
 }
 
@@ -302,5 +302,26 @@ margin:  2% 1%;
     color:#ffbb00e4;
     margin-bottom: 10%;
 } 
+
+
+
+
+/* NEWS SECTION */
+
+#news {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    /* background-color: #a5a8c5; */
+}
+
+table,td {
+    
+    padding: 0 20px;
+}
+
+#news a {
+    color: slateblue;
+}
 
 
