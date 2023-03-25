@@ -2,13 +2,16 @@
 <html lang="eng">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width-device-width, initial scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cedii</title>
 
     <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"> </script>
+
   </head>
   <body>
 
@@ -51,7 +54,7 @@
         
       
     </section>
-    <hr />
+    <!-- <hr /> -->
 
 
     <!-- FEATURES SECTION -->
@@ -73,31 +76,33 @@
     </div>
       </section>
 
-    <hr />
+    <!-- <hr /> -->
 
     <!-- LIVE PRICES SECTION -->
     <section id="pricing">
-    
+
+      <h2>LIVE PRICES</h2>
+    <div class="pricing-container">
       <div class="coin" id="bitcoin">
         <img class="coin-icon" src="images/bitcoin.png">
-        <h5>BitCoin</h5>
-        <h5>000</h5>
+        <h5>Bitcoin</h5>
+        <h5>GH₵‎<span id="btcPrice"></span></h5>
         
         <button class="trade-btn" type="button">TRADE</button>
       </div>
 
-      <div class="coin" id="etherium">
+      <div class="coin" id="ethereum">
         <img class="coin-icon" src="images/ethereum.png">
         <h5>Ethereum</h5>
-        <h5>000</h5>
+        <h5>GH₵‎<span id="ethPrice"></span></h5>
        
         <button class="trade-btn" type="button">TRADE</button>
       </div>
 
-      <div class="coin" id="usdt">
+      <div class="coin" id="dogecoin">
         <img class="coin-icon" src="images/dogecoin.png">
         <h5>Dogecoin</h5>
-        <h5>000</h5>
+        <h5>GH₵‎<span id="dgePrice"></span></h5>
         
         <button class="trade-btn" type="button">TRADE</button>
       </div>
@@ -105,13 +110,14 @@
       <div class="coin" id="usdt">
         <img class="coin-icon" src="images/tether.png">
         <h5>USDT</h5>
-        <h5>000</h5>
+        <h5>GH₵‎<span id="usdtPrice"></span></h5>
         
         <button class="trade-btn" type="button">TRADE</button>
       </div>
+    </div>
 
     </section>
-    <hr />
+    <!-- <hr /> -->
 
     <!--TESTIMONIALS-->
     <section id="testimonials">
@@ -166,7 +172,7 @@
 </div>
     
     </section>
-    <hr />
+    <!-- <hr /> -->
 
     <!-- NEWS SECTION -->
     <section id="news">
@@ -224,7 +230,7 @@
         <p>Verified users</p>
       </div>
     </section>
-    <hr />
+    <!-- <hr /> -->
 
     <!--FOOTER-->
     <footer>
@@ -272,6 +278,6 @@
       </div>
       <p>cedii ©2023</p>
     </footer>
-  
+  <script src="app.js"></script>
   </body>
 </html>

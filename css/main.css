@@ -228,11 +228,18 @@ nav {
 
 /*PRICES SECTION*/
 
+
 #pricing {
+    background-color: #2d3047;
+    text-align: center;
+    color: #fff;
+    padding-top: 3%;
+    margin: 5% auto;
+
+}
+.pricing-container {
     display: flex;
     justify-content: center;
-    background-color: #2d3047;
-    color: #fff;
     padding: 5%;
 
     
@@ -262,6 +269,10 @@ nav {
 #pricing .trade-btn {
     position: static;
     margin: auto;
+}
+
+#pricing span {
+    margin-left: 15px;
 }
 
 
@@ -386,3 +397,5 @@ footer .fa-brands {
 footer table {
 margin-bottom: 8%;
 }
+
+
