@@ -53,6 +53,7 @@ nav {
     border: solid 0.5px #8aea92;
     background-color:#2d3047;
     padding: 0 10px;
+    cursor: pointer;
 }
 
 #cedi {
@@ -105,6 +106,7 @@ nav {
 
 #log-in:hover, #sign-up:hover {
     background-color:#96ee9dba;
+    cursor:pointer;
 }
 
 
@@ -202,6 +204,9 @@ nav {
     color: white;
     
 }
+
+
+
 
 
 /*FEATURES SECTION*/
