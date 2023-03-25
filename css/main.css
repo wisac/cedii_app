@@ -308,10 +308,13 @@ margin:  2% 1%;
 
 /* NEWS SECTION */
 
+
+
 #news {
     text-align: center;
     width: 70%;
-    margin: auto;
+    margin: 5% auto;
+
     /* background-color: #a5a8c5; */
 }
 
@@ -322,6 +325,64 @@ table,td {
 
 #news a {
     color: slateblue;
+
 }
 
 
+#stats {
+    background-color: #8aea92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 200px;
+    
+}
+
+
+
+/*FOOTER SECTION*/
+.footer-sec {
+    
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer {
+    background-color: #2d3047;
+    height: max-content;
+    color:#fff;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 4%;
+    
+    
+    
+
+
+}
+
+/* .footer-sec  {
+    display: flex;
+} */
+
+ footer table  td, footer table th {
+    padding: 20px 100px;
+    text-align: center;
+}
+
+
+/* .socials {
+    display: inline;
+    margin-left: 100px;
+} */
+
+footer .fa-brands {
+    margin: auto 20px;
+}
+
+footer table {
+margin-bottom: 8%;
+}
