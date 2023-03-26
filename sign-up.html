@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up - Cedii</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/sign-up.css" />
+  </head>
+
+  <body>
+    <nav class="nav-container">
+      <!-- <h1 class="nav-brand"><span id="cedi">₵</span></h1> -->
+      <h1 class="nav-brand">
+        <span id="cedi"
+          ><img id="cedi-sign" src="images/My project small.png" </span
+        >EDII
+      </h1>
+
+      <ul class="nav-menu" type="none">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="">Buy</a></li>
+        <li><a class="nav-link" href="">Sell</a></li>
+        <li><a class="nav-link" href="">Prices</a></li>
+        <li><a class="nav-link" href="">Support</a></li>
+        <li><a class="nav-link" href="">About Us</a></li>
+        <li><a class="nav-link" href="">FAQ</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <form action="login.html">
+          <input
+            type="submit"
+            value="LOG IN"
+            class="registration"
+            id="log-in"
+          />
+        </form>
+      </div>
+    </nav>
+
+    <!-- SIGN-UP BOX -->
+<div class="main-container">
+    <div class="sign-up-container">
+        <h3 id="sign-up-title">SIGN UP</h3>
+      <form class="sign-up-form" action="">
+        <label for="fname">First Name</label><br />
+        <input type="text" name="fname" placeholder="First Name" id="fname" accept="text" /><br />
+
+        <label for="lname">Last Name</label><br />
+        <input type="text" name="lname" placeholder="Last Name" id="lname" accept="text" /><br />
+
+        <label for="email">Email</label><br />
+        <input type="email" placeholder="someone@domain.com" name="email" id="email" /><br />
+
+        <label for="phone">Phone Number</label><br />
+        <input type="text" name="phone" placeholder="eg. +233000000000" id="phone" accept="number" /><br />
+
+        <label for="password">Password</label><br />
+        <input type="password" placeholder="Enter Password" name="password" id="password" /><br />
+        <label for="password">Re-enter password</label><br />
+        <input type="password" placeholder="Enter same Password" name="password" id="password" /><br />
+
+        <div id="terms-div">
+        <input type="checkbox" id="terms" name="terms" />
+        <label for="terms" id="terms-word"
+          >I have read and accept all the terms and conditions</label
+        >
+      </div>
+
+        <input type="submit" id="sign-up-btn" value="SIGN UP" /><br />
+
+        <p id="login-instead">Already have an account? <a href="login.html">Log in</a></p>
+        <div class="social-icon">
+          <a href=""
+            ><img
+              src="https://img.icons8.com/color/48/null/google-logo.png"
+              id="google-icon"
+              alt="google"
+          /></a>
+          <a href=""
+            ><img
+              src="https://img.icons8.com/office/80/null/mac-os.png"
+              id="apple-icon"
+              alt="apple"
+          /></a>
+        </div>
+      </form>
+    </div>
+
+    <div id="bg-image-box">
+        
+        <div id="welcome-message">
+        <h2 id="welcome-only">WELCOME !</h2>
+        <h3 id="w">Cryto Exchange made easy with Cedii
+        </h3>
+    </div>
+        <img id="bg-image" src="images/3d-cryptocurrency-rendering-design.jpg">
+    </div>
+</div>
+
+    <p class="copyright">cedii ©2023</p>
+  </body>
+</html>
