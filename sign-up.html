@@ -45,24 +45,28 @@
         <h3 id="sign-up-title">SIGN UP</h3>
       <form class="sign-up-form" action="">
         <label for="fname">First Name</label><br />
-        <input type="text" name="fname" placeholder="First Name" id="fname" accept="text" /><br />
+        <input type="text" name="fname" placeholder="First Name" id="fname" accept="text" required /><br />
 
         <label for="lname">Last Name</label><br />
-        <input type="text" name="lname" placeholder="Last Name" id="lname" accept="text" /><br />
+        <input type="text" required name="lname" placeholder="Last Name" id="lname" accept="text" /><br />
 
         <label for="email">Email</label><br />
-        <input type="email" placeholder="someone@domain.com" name="email" id="email" /><br />
+        <input type="email" placeholder="someone@domain.com" name="email" id="email" required /><br />
+
+        <label for="email">Date Of Birth</label><br />
+        <input type="date"  required placeholder="dd/mm/yy" name="date" id="date" /><br />
+
 
         <label for="phone">Phone Number</label><br />
-        <input type="text" name="phone" placeholder="eg. +233000000000" id="phone" accept="number" /><br />
+        <input type="tel" required name="phone" placeholder="eg. +233000000000" maxlength="14" minlength="13" id="phone" accept="number" /><br />
 
         <label for="password">Password</label><br />
-        <input type="password" placeholder="Enter Password" name="password" id="password" /><br />
+        <input type="password" minlength="6" placeholder="Enter Password" name="password" id="password" required /><br />
         <label for="password">Re-enter password</label><br />
-        <input type="password" placeholder="Enter same Password" name="password" id="password" /><br />
+        <input type="password" minlength="6" required placeholder="Enter same Password" name="password" id="password" /><br />
 
         <div id="terms-div">
-        <input type="checkbox" id="terms" name="terms" />
+        <input type="checkbox" required id="terms" name="terms" />
         <label for="terms" id="terms-word"
           >I have read and accept all the terms and conditions</label
         >
