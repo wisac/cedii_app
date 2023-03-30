@@ -1,0 +1,52 @@
+/* body {
+    background-color: #2d3047;
+    color:#8aea92;
+} */
+
+.nav-container a  {
+    color: #fafdf6;
+    text-decoration: none;
+}
+
+
+.nav-container a:hover{
+    background-image: linear-gradient(to right,#8aea92,#2d3047) ;
+}
+
+.trade-container {
+    margin-top: 200px;
+    height: 800px;
+    background-color: #8aea92;
+    width: 50%;
+    
+}
+
+.trade-option {
+    display: flex;
+}
+
+#buy-option{
+    width: 50%;
+}
+#buy-option-btn {
+    width: 100%;
+}
+
+#sell-option{
+    width: 50%;
+}
+
+
+#sell-option-btn {
+    width: 100%;
+}
+
+
+input {
+    width: 40%;
+}
+
+/* 
+.values {
+    margin-right: 20%;
+} */

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trade - Cedii</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/buy.css" />
+  </head>
+
+  <body>
+    <nav class="nav-container">
+      <h1 class="nav-brand">
+        <span id="cedi"
+          ><img id="cedi-sign" src="images/My project small.png" </span
+        >EDII
+      </h1>
+
+      <ul class="nav-menu" type="none">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="buy.html">Buy</a></li>
+        <li><a class="nav-link" href="">Sell</a></li>
+        <li><a class="nav-link" href="">Prices</a></li>
+        <li><a class="nav-link" href="">Support</a></li>
+        <li><a class="nav-link" href="">About Us</a></li>
+        <li><a class="nav-link" href="">FAQ</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <form action="login.html">
+          <input
+            type="submit"
+            value="LOG IN"
+            class="registration"
+            id="log-in"
+          />
+        </form>
+      </div>
+    </nav>
+
+    <div class="trade-container">
+      <div class="trade-option">
+        <form id="buy-option">
+          <input type="submit" value="BUY" id="buy-option-btn" />
+        </form>
+
+        <form id="sell-option">
+          <input type="submit" value="SELL" id="sell-option-btn" />
+        </form>
+      </div>
+<form action="">
+  <table class="" border="1px">
+    <tr>
+      <td>
+      <label for="coin-type" class="values" >Select coin type</label>
+    </td>
+
+    <td colspan="3">
+      <select name="coin-type" " id="coin-type" required>
+        <option id="default" selected disabled >Choose coin</option>
+        <option id="bitcoin">Bitcoin</option>
+        <option id="ethereum">Ethereum</option>
+        <option id="dogecoin">Dogecoin</option>
+        <option id="usdt">USDT</option>
+      </select><br>
+    </td>
+      
+    </tr>
+    <tr>
+      <td>
+        <label for="cryto-network" class="values" >Network type</label>
+      </td>
+      <td colspan="3">
+        <select name="cryto-network" id="cryto-network" required>
+          <option id="default" selected disabled>Choose Network</option>
+          <option id="btc" >BTC</option>
+          <option id="erc20" >ETH/ERC20</option>
+          <option id="trc20" >Tron/TRC20</option>
+          <option id="bep20" >BNB/BEP20</option>
+          <option id="solana" >Solana</option>
+          <option id="litcoin" >Litecoin</option>
+          <option id="dogecoin" >dogecoin</option>
+        </select>
+      </td>
+    </tr>
+
+      <tr>
+        <td>
+          <label for="amount" class="values" >Amount</label><br>
+        </td>
+        <td colspan="2">
+          <label for="ghc-amount">GHC</label>
+          <input type="number" id="ghc-amount">
+          
+        </td>
+        <td>
+          <label for="crypto-amount">Coin quantity</label>
+      <input type="number" id="crypto-amount">
+        </td>
+       
+      </tr>
+      
+<tr>
+  <td>
+    <label for="momo-networks" class="values" >Momo Network</label><br>
+  </td>
+  <td>
+    <label for="mtn">MTN</label>
+    <input type="radio" id="mtn" name="momo-network">
+    </td>
+    <td>
+    <label for="vodafone">Vodafone</label>
+    <input type="radio" id="vodafone" name="momo-network">
+  </td>
+  <td>
+    <label for="mtn">AirtelTigo</label>
+    <input type="radio" id="airtel" name="momo-network"><br>
+  </td>
+</tr>
+    
+    <tr>
+      <td>
+        <label for="momo-wallet" class="values" >Momo wallet number</label>
+      </td>
+      <td colspan="3">
+        <input type="tel" id="momo-wallet"><br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <label for="crypto-wallet" class="values" >Recipient Wallet Address</label>
+      </td>
+      <td colspan="3">
+        <input type="text" id="crypto-wallet"><br>
+      </td>
+    </tr>
+    
+    
+   
+  </table>
+   
+    <input type="submit" value="BUY">
+  
+
+  </form>
+    </div>
+  </body>
+</html>
