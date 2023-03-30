@@ -17,7 +17,7 @@
     margin-top: 200px;
     height: 800px;
     background-color: #8aea92;
-    width: 50%;
+    width: 60%;
     
 }
 
@@ -42,8 +42,19 @@
 }
 
 
+
+
+/* TABLE STYLING */
+
+select {
+    width: 50%;
+    height: 1.5rem;
+}
+
+
 input {
-    width: 10em;
+    width: 10rem;
+    height: 1.5rem;
 }
 
 /* 
@@ -51,16 +62,34 @@ input {
     margin-right: 20%;
 } */
 
-td {
-    border: 1px solid;
-    width: 20%;
-    padding: 10px;
+table {
+    
+    width: 100%;
+    border: 2px solid;
+    padding: 2px;
+    
+    
 }
 
-table {
+td {
+   
+    
+    width: 15%;
+    padding: 10px;
+    border-bottom: 2px solid;
     border-collapse: collapse;
-    width: 100%;
+    
+    
 }
+
+
+
+
+#table-label {
+    width: 40%;
+    
+}
+
 
 /* #ghc {
  width: 50% !important;
@@ -77,6 +106,8 @@ table {
 #radio-inputs {
     margin-left: 0px;
     width: 10px;
+    transform: scale(3);
+    
     
 }
 
@@ -88,6 +119,19 @@ table {
     width: 100%;
 }
 
+#momo-wallet {
+    width: 50%;
+}
+
 #buy-btn {
     width: 100%;
 }
+
+.network-logos {
+    /* display: block; */
+}
+
+.momo-networks {
+    text-align: center;
+}
+

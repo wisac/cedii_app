@@ -50,9 +50,9 @@
         </form>
       </div>
 <form action="">
-  <table class="" >
+  <table cellspacing="10px" class="" >
     <tr>
-      <td>
+      <td class="labels">
       <label for="coin-type" class="values" >Select coin type</label>
     </td>
 
@@ -68,7 +68,7 @@
       
     </tr>
     <tr>
-      <td>
+      <td id="table-label">
         <label for="cryto-network" class="values" >Network type</label>
       </td>
       <td colspan="4">
@@ -105,16 +105,22 @@
   <td>
     <label for="momo-networks" class="values" >Momo Network</label><br>
   </td>
-  <td>
+  <td class="momo-networks" >
     <label for="mtn">MTN</label>
+    
+    <img class="network-logos" src="images/mtn-thumbnail.png" alt="mtn-logo"><br>
     <input id="radio-inputs" type="radio" id="mtn" name="momo-network">
     </td>
-    <td>
+    <td class="momo-networks">
     <label for="vodafone">Vodafone</label>
+    
+    <img class="network-logos" src="images/voda-thumbnail.png" alt="voda-logo"><br>
     <input id="radio-inputs" type="radio" id="vodafone" name="momo-network">
   </td>
-  <td>
-    <label for="mtn">AirtelTigo</label>
+  <td class="momo-networks" >
+    <label for="mtn">AirtelTigo</label><br>
+    
+    <img  class="network-logos" src="images/tigo-thumbnail.png" alt="airtel-logo"><br>
     <input id="radio-inputs" type="radio" id="airtel" name="momo-network"><br>
   </td>
   <td>
@@ -127,7 +133,7 @@
         <label for="momo-wallet" class="values" >Momo wallet number</label>
       </td>
       <td colspan="4">
-        <input maxlength="10" minlength="10" class="wallet-inputs" type="tel" id="momo-wallet"><br>
+        <input maxlength="10" minlength="10" class="wallet-inputs" id="momo-wallet" type="tel" id="momo-wallet"><br>
       </td>
     </tr>
     <tr>
