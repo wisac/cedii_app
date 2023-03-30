@@ -43,10 +43,51 @@
 
 
 input {
-    width: 40%;
+    width: 10em;
 }
 
 /* 
 .values {
     margin-right: 20%;
 } */
+
+td {
+    border: 1px solid;
+    width: 20%;
+    padding: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* #ghc {
+ width: 50% !important;
+} */
+
+/* #cry {
+    width: 50%;
+} */
+
+#momo {
+    
+}
+
+#radio-inputs {
+    margin-left: 0px;
+    width: 10px;
+    
+}
+
+.amounts {
+    width: 100%;
+}
+
+.wallet-inputs {
+    width: 100%;
+}
+
+#buy-btn {
+    width: 100%;
+}
