@@ -344,7 +344,7 @@ footer {
 
 footer table td,
 footer table th {
-  padding: 20px 100px;
+  padding: 15px 100px;
   text-align: center;
 }
 
@@ -358,5 +358,14 @@ footer .fa-brands {
 }
 
 footer table {
-  margin-bottom: 8%;
+  margin-bottom: 1%;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: #fff;
+
+}
+.footer-links:hover {
+  color:#8aea92;
 }
