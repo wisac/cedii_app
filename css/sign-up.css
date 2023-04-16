@@ -1,5 +1,6 @@
 body {
-    background-color: #2d3047;
+    /* background-color: #2d3047; */
+    background-image: linear-gradient(to right, rgb(162,109,171),rgb(49,35,90),rgb(49,35,90));
     color:#8aea92;
 }
 
@@ -39,7 +40,8 @@ body {
 input {
     width: 70%;
     height: 2rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    border-radius: 10px;
 }
 
 #terms {
@@ -113,5 +115,5 @@ input {
 
 .copyright {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20%;
 }
