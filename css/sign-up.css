@@ -37,12 +37,17 @@ body {
     margin-bottom: 50px;
 }
 
-input {
+ input {
     width: 70%;
     height: 2rem;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     border-radius: 10px;
 }
+
+.sign-up-container input {
+    margin-bottom: 30px;
+}
+
 
 #terms {
      margin: 0px 2px 0 0;
