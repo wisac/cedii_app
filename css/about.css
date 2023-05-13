@@ -1,0 +1,111 @@
+#about-us-banner {
+    width: 100%;
+    margin: 50px auto;
+}
+
+
+.nav-container a  {
+    color: #fafdf6;
+    text-decoration: none;
+}
+
+
+.nav-container a:hover{
+    background-image: linear-gradient(to right,#8aea92,#2d3047) ;
+}
+.main-container {
+    margin-top: -10px;
+}
+.featured-image {
+    
+}
+
+.about-titles {
+    font-size: 1.2rem;
+    text-align: center;
+
+    
+}
+
+.about-text {
+    text-align: center;
+}
+
+
+
+#logo-container {
+    /* position:absolute;
+    top: 600px; */
+    display: flex;
+    align-content: center;
+    left: 90px;
+}
+
+#cedii-logo-sign {
+    height: 200px;
+    margin-bottom: 0;
+    align-self: center;
+}
+
+#cedii-logo {
+    color:#8aea92;
+    font-size: 250px;
+    /* margin: 20px; */
+    display: inline-block; 
+    align-self: center;
+   
+}
+
+
+
+
+#logo-parent-container {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    top: 300px;
+    left: 80px;
+}
+
+
+
+#feature-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+    
+    
+
+}
+.features {
+  
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+    
+}
+
+#about-company, #faq , #terms{
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+    
+}
+
+#faq {
+    margin-top: 10%;
+
+}
+
+#faq-section {
+    background-color: rgba(246, 241, 249, 0.638);
+    margin-bottom: 10%;
+}
+
+.copyright {
+    margin-top: 10%;
+    text-align: center;
+}
