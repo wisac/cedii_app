@@ -1,0 +1,66 @@
+#about-us-banner {
+    width: 100%;
+    margin: 50px auto;
+}
+
+
+.nav-container a  {
+    color: #fafdf6;
+    text-decoration: none;
+}
+
+
+.nav-container a:hover {
+    background-image: linear-gradient(to right,#8aea92,#2d3047) ;
+}
+
+ .text-box {
+    width: 150%;
+    margin-bottom:  5%;
+    
+}
+
+#message-box {
+    height: 200px;
+    width: 150%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    margin:  5% auto;
+    
+}
+
+.top-container {
+    display: flex;
+    gap: 20rem;
+    margin: 5% auto;
+    
+
+}
+
+.bottom-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    width: 50%;
+    text-align: center;
+}
+
+.find-us {
+    margin: 10% 0;
+    width: 100%;
+
+}
+
+.find-us .fa-brands:hover {
+    color: #444444;
+    
+}
+
+.find-us .fa-brands {
+    margin: 8% 5%;
+}

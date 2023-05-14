@@ -12,8 +12,10 @@
 
 <script src="https://code.jquery.com/jquery-3.6.4.min.js"> </script>
 
+
   </head>
   <body>
+    <script src="app.js"></script>
 
     <!-- TITLE SECTION -->
     <script src="https://kit.fontawesome.com/c6f9e892e6.js" crossorigin="anonymous"></script>
@@ -29,7 +31,7 @@
               <li><a  class="nav-link" href="buy.html">Buy</a></li>
               <li><a  class="nav-link" href="">Sell</a></li>
               <li><a  class="nav-link" href="#pricing">Prices</a></li>
-              <li><a  class="nav-link" href="">Support</a></li>
+              <li><a  class="nav-link" href="support.html">Support</a></li>
               <li><a  class="nav-link" href="about.html">About Us</a></li>
               <li><a  class="nav-link" href="about.html">FAQ</a></li>
             </ul>
@@ -58,7 +60,8 @@
           <img id="momo-img" src="images/momo-img.png" alt="">
           </div>
           <img src="images/vecteezy_cryptocurrency-3d-illustration_11064692_686.png" id="crypto-img">
-          <button type="button" class="trade-btn">TRADE</button>
+          <form action="buy.html">
+          <input type="submit" class="trade-btn" value="TRADE"></form>
         
       
     </section>
@@ -95,8 +98,9 @@
         <img class="coin-icon" src="images/bitcoin.png">
         <h5>Bitcoin</h5>
         <h5>GH₵‎<span id="btcPrice"></span></h5>
-        
-        <button class="trade-btn" type="button">TRADE</button>
+        <form action="buy.html">
+        <input class="trade-btn" type="submit" value="TRADE">
+      </form>
       </div>
 
       <div class="coin" id="ethereum">
@@ -104,15 +108,18 @@
         <h5>Ethereum</h5>
         <h5>GH₵‎<span id="ethPrice"></span></h5>
        
-        <button class="trade-btn" type="button">TRADE</button>
+        <form action="buy.html">
+        <input class="trade-btn" type="submit" value="TRADE">
+      </form>
       </div>
 
       <div class="coin" id="dogecoin">
         <img class="coin-icon" src="images/dogecoin.png">
         <h5>Dogecoin</h5>
         <h5>GH₵‎<span id="dgePrice"></span></h5>
-        
-        <button class="trade-btn" type="button">TRADE</button>
+        <form action="buy.html">
+          <input class="trade-btn" type="submit" value="TRADE">
+        </form>
       </div>
 
       <div class="coin" id="usdt">
@@ -120,7 +127,9 @@
         <h5>USDT</h5>
         <h5>GH₵‎<span id="usdtPrice"></span></h5>
         
-        <button class="trade-btn" type="button">TRADE</button>
+        <form action="buy.html">
+          <input class="trade-btn" type="submit" value="TRADE">
+        </form>
       </div>
     </div>
 
@@ -256,8 +265,8 @@
           <tbody>
             <tr>
               <td><a class="footer-links" href="buy.html">Buy Crypto</a></td>
-              <td><a href="aboutUs.html" class="footer-links">About Us</a></td>
-              <td><a class="footer-links">Customer Support</a></td>
+              <td><a href="about.html" class="footer-links">About Us</a></td>
+              <td><a class="footer-links" href="support.html">Customer Support</a></td>
               <td><i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
@@ -265,9 +274,9 @@
               </td>
             </tr>
             <tr>
-              <td><a class="footer-links" href="sell.html">Sell Crypto</a></td>
-              <td><a class="footer-links">Terms and conditions</a></td>
-              <td><a class="footer-links" href="">Find Us</a></td>
+              <td><a class="footer-links" href="buy.html">Sell Crypto</a></td>
+              <td><a class="footer-links" href="about.html">Terms and conditions</a></td>
+              <td><a class="footer-links" href="support.html">Find Us</a></td>
             </tr>
             <tr>
               <td><a href="" class="footer-links">News</a></td>
@@ -276,7 +285,7 @@
             </tr>
             <tr>
               <td></td>
-              <td><a href="" class="footer-links">FAQ</a></td>
+              <td><a href="about.html" class="footer-links">FAQ</a></td>
               <td></td>
             </tr>
           </tbody>
@@ -286,6 +295,6 @@
       </div>
       <p>©cedii 2023</p>
     </footer>
-  <script src="app.js"></script>
+  
   </body>
 </html>
