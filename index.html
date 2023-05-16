@@ -15,7 +15,7 @@
 
   </head>
   <body>
-    <script src="app.js"></script>
+    
 
     <!-- TITLE SECTION -->
     <script src="https://kit.fontawesome.com/c6f9e892e6.js" crossorigin="anonymous"></script>
@@ -28,17 +28,31 @@
           
             <ul class="nav-menu"type="none">
               <li><a  class="nav-link" href="index.html">Home</a></li>
-              <li><a  class="nav-link" href="buy.html">Buy</a></li>
-              <li><a  class="nav-link" href="">Sell</a></li>
+              <li><a  class="nav-link" href="buy.html">Trade</a></li>
+             
               <li><a  class="nav-link" href="#pricing">Prices</a></li>
               <li><a  class="nav-link" href="support.html">Support</a></li>
-              <li><a  class="nav-link" href="about.html">About Us</a></li>
+              <li><a  class="nav-link" href="about.html">About</a></li>
               <li><a  class="nav-link" href="about.html">FAQ</a></li>
-            </ul>
+
+                            
+<div class="wrapper">
+  <div class="searchbox">
+    <input type="text" class="input">
+      
+    <div class="searchbtn">
+      <i class="fas fa-search"></i>
+    </div>
+    
+  </div>
+</div>
+</ul>
+
+
          
           <div class="nav-cta">
             <form action="login.html">
-            <input type="submit" value="LOG IN" class="registration" id="log-in">
+            <input type="submit" value="LOGIN" class="registration" id="log-in">
           </form>
 
             <form action="sign-up.html">
@@ -54,9 +68,9 @@
           <div><img id="featured-image" src="images/featured_image.jpg" alt="" /></div>
           <div class="featured-message">
                     
-              <h2 class="large-title">BUY OR SELL YOUR CRYPTO WITH <span id="crypto">MOMO!</span></h2>
+              <h2 class="large-title">BUY OR SELL YOUR CRYPTO WITH <span id="momo-title">MOMO!</span></h2>
             <h4 class="small-title">Receive money in your wallet</h4>
-            <h4 class="medium-title">Instantly</h4>
+            <h4 class="small-title">Instantly</h4>
           <img id="momo-img" src="images/momo-img.png" alt="">
           </div>
           <img src="images/vecteezy_cryptocurrency-3d-illustration_11064692_686.png" id="crypto-img">
@@ -70,18 +84,18 @@
 
     <!-- FEATURES SECTION -->
     <section id="features">
-      <h2>FEATURES</h2>
+      <h2 class="section-titles">FEATURES</h2>
       <div class="features-container">
       <div class="feature-1 feature-item">
-        <h3><i class="fa-solid fa-bolt fa-4x"></i>Instant</h3>
+        <h3><i class="feature-icon fa-solid fa-bolt fa-4x"></i>Instant</h3>
         <p>Receive your asset instantly without any delay</p>
       </div>
       <div class="feature-2 feature-item">
-        <h3><i class="fa-sharp fa-solid fa-lock fa-4x"></i> Secure</h3>
+        <h3><i class="feature-icon fa-sharp fa-solid fa-lock fa-4x"></i> Secure</h3>
         <p>Your assets are sevured with the a strong encryption</p>
       </div>
       <div class="feature-3 feature-item">
-        <h3><img src="images/lowest-price.png" height="117px"> Low Charges</h3>
+        <h3><img class="feature-icon" src="images/lowest-price.png" height="117px"> Low Charges</h3>
         <p>Pay little or no charge for each transaction you make</p>
       </div>
     </div>
@@ -92,7 +106,7 @@
     <!-- LIVE PRICES SECTION -->
     <section id="pricing">
 
-      <h2>LIVE PRICES</h2>
+      <h2 class="section-titles">LIVE PRICES</h2>
     <div class="pricing-container">
       <div class="coin" id="bitcoin">
         <img class="coin-icon" src="images/bitcoin.png">
@@ -138,7 +152,7 @@
 
     <!--TESTIMONIALS-->
     <section id="testimonials">
-      <h3>TESTIMONIALS</h3>
+      <h2 class="section-titles">TESTIMONIALS</h2>
       <h5>People love Cedii</h5>
 
       <div class="testimonial-container">
@@ -193,7 +207,7 @@
 
     <!-- NEWS SECTION -->
     <section id="news">
-      <h2>Top Stories</h2>
+      <h2 class="section-titles">Top Stories</h2>
       <div class="story">
         <table cell spacing="40px">
           <tr>
@@ -296,5 +310,6 @@
       <p>©cedii 2023</p>
     </footer>
   
+    <script src="app.js"></script>
   </body>
 </html>

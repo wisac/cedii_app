@@ -30,3 +30,9 @@ $.ajax(livePrice).done(function (response)
      dge.innerHTML = Math.round((response.dogecoin.usd * dollarRate) * 100) / 100;
      usdt.innerHTML = Math.round((response.tether.usd * dollarRate) * 100) / 100;
 });
+
+$(".searchbtn").click(function(){
+     $(this).toggleClass("bg-green");
+     $(".fas").toggleClass("color-white");
+     $(".input").focus().toggleClass("active-width").val('');
+   });

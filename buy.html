@@ -6,7 +6,7 @@
     <title>Trade - Cedii</title>
 
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/buy.css" />
+    <link rel="stylesheet" href="css/buy.csss" />
   </head>
 
   <body>
@@ -98,12 +98,12 @@
         </td>
         <td colspan="2" id="ghc">
           <label for="ghc-amount">GHC</label><br>
-          <input class="amounts" type="number" id="ghc-amount" placeholder="0.00">
+          <input class=" trade-inputs amounts" type="number" id="ghc-amount" placeholder="0.00">
           
         </td>
         <td id="cry" colspan="2">
           <label for="crypto-amount">Coin quantity</label><br>
-      <input class="amounts" type="number" id="crypto-amount" placeholder="0.0000">
+      <input class=" trade-inputs  amounts" type="number" id="crypto-amount" placeholder="0.0000">
         </td>
        
       </tr>
@@ -116,19 +116,19 @@
     <label for="mtn">MTN</label>
     
     <img class="network-logos" src="images/mtn-thumbnail.png" alt="mtn-logo"><br>
-    <input id="radio-inputs" type="radio" id="mtn" name="momo-network">
+    <input class="trade-inputs " id="radio-inputs" type="radio" id="mtn" name="momo-network">
     </td>
     <td class="momo-networks">
     <label for="vodafone">Vodafone</label>
     
     <img class="network-logos" src="images/voda-thumbnail.png" alt="voda-logo"><br>
-    <input id="radio-inputs" type="radio" id="vodafone" name="momo-network">
+    <input class="trade-inputs" id="radio-inputs" type="radio" id="vodafone" name="momo-network">
   </td>
   <td class="momo-networks" >
     <label for="mtn">AirtelTigo</label><br>
     
     <img  class="network-logos" src="images/tigo-thumbnail.png" alt="airtel-logo"><br>
-    <input id="radio-inputs" type="radio" id="airtel" name="momo-network"><br>
+    <input class="trade-inputs" id="radio-inputs" type="radio" id="airtel" name="momo-network"><br>
   </td>
   <td>
 
@@ -140,7 +140,7 @@
         <label for="momo-wallet" class="values" >Momo Payment number</label>
       </td>
       <td colspan="4">
-        <input maxlength="10" minlength="10" class="wallet-inputs" id="momo-wallet" type="tel" id="momo-wallet"placeholder="Eg. 0244000000"><br>
+        <input maxlength="10" minlength="10" class="trade-inputs  wallet-inputs" id="momo-wallet" type="tel" id="momo-wallet"placeholder="Eg. 0244000000"><br>
       </td>
     </tr>
     <tr>
@@ -148,7 +148,7 @@
         <label for="crypto-wallet" class="values" >Recipient Wallet Address</label>
       </td>
       <td  colspan="4">
-        <input class="wallet-inputs" type="text" id="crypto-wallet" placeholder="Enter Crypto Wallet Address"><br>
+        <input class="trade-inputs  wallet-inputs" type="text" id="crypto-wallet" placeholder="Enter Crypto Wallet Address"><br>
       </td>
     </tr>
     <tr>
@@ -156,7 +156,7 @@
         <label for="crypto-wallet" class="values" >Confirm Wallet Address</label>
       </td>
       <td  colspan="4">
-        <input class="wallet-inputs" type="text" id="crypto-wallet" placeholder="Confirm Cryto Wallet Address"><br>
+        <input class="trade-inputs  wallet-inputs" type="text" id="crypto-wallet" placeholder="Confirm Cryto Wallet Address"><br>
       </td>
     </tr>
     <tr>
@@ -164,7 +164,7 @@
         <label for="trade-auth" class="values">Password</label>
       </td>
       <td colspan="4">
-        <input type="password" class="wallet-inputs" id="cypto-wallet" placeholder="Enter Password">
+        <input type="password" class="trade-inputs  wallet-inputs" id="cypto-wallet" placeholder="Enter Password">
       </td>
     </tr>
     
@@ -172,7 +172,7 @@
    
   </table>
    
-    <input id="buy-btn" type="submit" value="BUY">
+    <input class="trade-inputs" id="buy-btn" type="submit" value="BUY">
   
 
   </form>

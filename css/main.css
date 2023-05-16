@@ -5,21 +5,13 @@
 
 */
 
+/*UNIVERSAL STYLES*/
+
 body {
+  overflow-x: hidden;
   margin: 0;
-  /* font-family: 'Quicksand', sans-serif; */
   font-family: "Karla", sans-serif;
   font-size: 1rem;
-  /* font-family: 'Quicksand', sans-serif; */
-}
-
-#title a {
-  color: #fafdf6;
-  text-decoration: none;
-}
-
-#title a:hover {
-  background-image: linear-gradient(to right, #8aea92, #2d3047);
 }
 
 h1,
@@ -29,343 +21,2089 @@ h4 {
   margin: 0;
 }
 
-nav {
-  background-color: #2d3047;
-  color: #fafdf6;
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 1;
-  /* margin-bottom: 2px; */
-}
+@media (min-width: 1494px) {
+  /*NAV BAR*/
+  nav {
+    background-color: #2d3047;
+    color: #fafdf6;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
 
-.nav-container {
-  display: flex;
-  align-items: center;
-}
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
 
-.nav-brand {
-  margin-right: auto;
-  margin-left: 20px;
-  color: #8aea92;
-  font-size: 1.8rem;
-  border: solid 0.5px #8aea92;
-  background-color: #2d3047;
-  padding: 0 10px;
-  cursor: pointer;
-}
+  .nav-brand {
+    margin-right: auto;
+    margin-left: 1%;
+    color: #8aea92;
+    font-size: 1.8rem;
+    border: solid 0.5px #8aea92;
+    background-color: #2d3047;
+    padding: 0 2px;
+    cursor: pointer;
+  }
 
-#cedi {
-  color: #f5ee9e;
-  padding: 0;
-}
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 0.22rem;
+  }
 
-.nav-menu {
-  display: flex;
-  flex-direction: row;
-  gap: 1.5rem;
-}
+  .nav-link {
+    padding: 20px;
+  }
 
-.nav-link {
-  padding: 20px;
-}
+  .nav-cta {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
 
-.nav-cta {
-  display: flex;
-  flex-direction: row;
-  margin-left: auto;
-}
+  .nav-container a {
+    color: #fafdf6;
+    text-decoration: none;
+  }
 
-#log-in,
-#sign-up {
-  margin-right: 20px;
-  width: 100px;
-  background-color: transparent;
-  color: white;
-  height: 50px;
-  border-color: #8aea92;
-  font-weight: bold;
-}
+  .nav-container a:hover {
+    background-image: linear-gradient(to right, #8aea92, #2d3047);
+  }
 
-#sign-up {
-  background-color: #f5ee9e;
-  width: 200px;
-  border-style: none;
-  color: #2d3047;
-}
+  #cedi {
+    color: #f5ee9e;
+    padding: 0;
+  }
 
-#log-in:hover,
-#sign-up:hover {
-  background-color: #96ee9dba;
-  cursor: pointer;
-}
+  .wrapper {
+    position: static;
+    /* height: 50px; */
+    margin-left: 2%;
 
-.featured-container {
-  margin-top: 0;
-}
+    transform: translate(-10%, -10%);
+  }
 
-#cedi-sign {
-  height: 31px;
-  color: #f5ee9e;
-  /* background-color:black; */
+  .searchbox {
+    position: relative;
+  }
 
-  filter: grayscale(50%);
-}
+  .searchbox .input {
+    width: 0px;
+    border: 0px;
+    height: 60px;
+    padding: 0px 35px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 1px #b6bbc0;
+    outline: none;
+    color: #42be11;
+    font-weight: bold;
+    font-size: 24px;
+    transition: all 0.5s linear;
+  }
 
-#featured-image {
-  /* height: 1270px; */
+  .searchbtn {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s 0.6s linear;
+  }
 
-  position: relative;
-  /* bottom: 200px; */
-  width: 100%;
+  .searchbtn .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #42be11;
+    font-size: 22px;
+    transition: all 0.5s 0.6s linear;
+  }
 
-  /* height: 10%; */
-}
+  /* jquery class */
+  .searchbtn.bg-green {
+    background: #42be11;
+    transition: all 0.2s linear;
+  }
 
+  .searchbtn .fas.color-white {
+    color: #fff;
+    transition: all 0.2s linear;
+  }
 
-#momo-img{
+  .searchbox .input.active-width {
+    width: 200px;
+  }
+
+  #log-in,
+  #sign-up {
+    margin-right: 20px;
+    width: 100px;
+    background-color: transparent;
+    color: white;
+    height: 50px;
+    border-color: #8aea92;
+    font-weight: bold;
+  }
+
+  #sign-up {
+    background-color: #f5ee9e;
+    width: 200px;
+    border-style: none;
+    color: #2d3047;
+  }
+
+  #log-in:hover,
+  #sign-up:hover {
+    background-color: #96ee9dba;
+    cursor: pointer;
+  }
+
+  #cedi-sign {
+    height: 31px;
+    color: #f5ee9e;
+
+    filter: grayscale(50%);
+  }
+
+  /*TITLE SECTION*/
+  .featured-container {
+    margin-top: 0;
+  }
+
+  #featured-image {
+    position: relative;
+    width: 100%;
+  }
+
+  #momo-img {
     width: 200px;
     margin-top: 20px;
-    
-}
+  }
 
-
-#crypto-img {
+  #crypto-img {
     width: 100px;
     position: absolute;
     top: 700px;
     left: 750px;
-}
+  }
 
-.featured-message {
-  width: 45%;
-  position: absolute;
-  top: 100px;
-  z-index: 0;
-  font-size: 2rem;
-  margin-top: 5%;
-  margin-left: 5%;
-  padding: 2%;
-  text-align: left;
-  border: solid rgba(45, 48, 71, 0.08) 10px;
-}
+  .featured-message {
+    width: 45%;
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 2%;
+    text-align: left;
+    border: solid rgba(45, 48, 71, 0.08) 10px;
+  }
 
-.large-title {
-  font-weight: bold;
-  color: #50cb5af3;
-  text-shadow: 2px 2px #2d3047;
-  /* background-color: rgba(45, 48, 71, 0.3) */
-}
+  .large-title {
+    font-weight: bold;
+    color: #50cb5af3;
+    text-shadow: 2px 2px #2d3047;
+  }
 
-.small-title {
-  margin: 0;
-  color: #2d3047;
-  font-size: 2rem;
-  /* background-color: #2d3047; */
-  /* background-color: rgba(45, 48, 71, 0.3) */
-}
+  #momo-title {
+    color: #f7e40a;
+  }
 
-.medium-title {
-  color: #2d3047;
-  font-size: 2rem;
-  /* background-color: #2d3047; */
-  /* background-color: rgba(45, 48, 71, 0.3) */
-}
+  .small-title {
+    margin: 0;
+    color: #2d3047;
+    font-size: 2rem;
+  }
 
-#crypto {
-  color: #f7e40a;
-}
+  .trade-btn {
+    position: absolute;
+    top: 700px;
+    margin-left: 5%;
+    width: 300px;
+    height: 80px;
+    background-color: #8aea92;
+    color: #2d3047;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.09),
+      0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
 
-.trade-btn {
-  position: absolute;
-  top: 700px;
-  margin-left: 5%;
-  width: 300px;
-  height: 80px;
-  background-color: #8aea92;
-  color: #2d3047;
-  font-size: 2rem;
-  font-weight: bold;
-  border-radius: 15px;
-  border-style: none;
-  box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.09), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
-}
+  .trade-btn:hover {
+    background-color: #2d3047;
+    color: white;
+    cursor: pointer;
+  }
 
-.trade-btn:hover {
-  background-color: #2d3047;
-  color: white;
-}
+  /*FEATURES SECTION*/
 
-/*FEATURES SECTION*/
+  #features {
+    text-align: center;
+    margin-top: 8%;
+  }
 
-#features {
-  text-align: center;
-  margin-top: 8%;
-}
-
-.features-container {
-  display: flex;
-
-  justify-content: center;
-  margin: 2% 10%;
-  padding: 0 5%;
-}
-
-.feature-item {
-  margin: auto 5%;
-}
-
-/*PRICES SECTION*/
-
-#pricing {
-  background-color: #2d3047;
-  text-align: center;
-  color: #fff;
-  padding-top: 3%;
-  margin: 5% auto;
-}
-.pricing-container {
-  display: flex;
-  justify-content: center;
-  padding: 5%;
-}
-
-.coin {
-  text-align: center;
-  padding: 2%;
-  font-size: 2rem;
-  border: solid 1px rgb(24, 26, 39);
-  border-radius: 15px;
-  background-color: #383c5d;
-
-  margin: auto 1%;
-}
-
-.coin:hover {
-  background-color: #585d8a;
-}
-
-.coin-icon {
-  height: 200px;
-}
-
-#pricing .trade-btn {
-  position: static;
-  margin: auto;
-}
-
-#pricing span {
-  margin-left: 15px;
-}
-
-/*Testimonials*/
-
-#testimonials {
-  text-align: center;
-  margin: 10% 10%;
-}
-
-.testimonial-container {
-  display: flex;
-  margin: 2% 1%;
-}
-
-#testimonials h6 {
-  font-size: 1.2rem;
-  margin: 5px;
-}
-
-#testimonials p {
-  margin: 4%;
-  line-height: 1.2;
-}
-
-.testimonial-item {
-  width: 100%;
-  margin: 3%;
-  background-color: rgba(248, 241, 211, 0.5);
-  padding: 4%;
-}
-
-.fa-star,
-.fa-star-half {
-  color: #ffbb00e4;
-  margin-bottom: 10%;
-}
-
-/* NEWS SECTION */
-
-#news {
-  text-align: center;
-  width: 70%;
-  margin: 5% auto;
-
-  /* background-color: #a5a8c5; */
-}
-
-table,
-td {
-  padding: 0 20px;
-}
-
-#news a {
-  color: slateblue;
-}
-
-#stats {
-  background-color: #8aea92;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10rem;
-  height: 200px;
-}
-
-/*FOOTER SECTION*/
-.footer-sec {
-  text-align: center;
-  display: flex;
-  justify-content: center;
-}
-
-footer {
-  background-color: #2d3047;
-  height: max-content;
-  color: #fff;
-  text-align: center;
-  padding-bottom: 1%;
-  padding-top: 4%;
-}
-
-/* .footer-sec  {
+  .features-container {
     display: flex;
-} */
 
-footer table td,
-footer table th {
-  padding: 15px 100px;
-  text-align: center;
+    justify-content: center;
+    margin: 2% 10%;
+    padding: 0 5%;
+  }
+
+  .feature-item {
+    margin: auto 5%;
+  }
+
+  /*PRICES SECTION*/
+  #pricing {
+    background-color: #2d3047;
+    text-align: center;
+    color: #fff;
+    padding-top: 3%;
+    margin: 5% auto;
+  }
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .coin {
+    text-align: center;
+    padding: 2%;
+    font-size: 2rem;
+    border: solid 1px rgb(24, 26, 39);
+    border-radius: 15px;
+    background-color: #383c5d;
+
+    margin: auto 1%;
+  }
+
+  .coin:hover {
+    background-color: #585d8a;
+  }
+
+  .coin-icon {
+    height: 200px;
+  }
+
+  #pricing .trade-btn {
+    position: static;
+    margin: auto;
+  }
+
+  #pricing span {
+    margin-left: 15px;
+  }
+
+  /*TESTIMONIALS*/
+
+  #testimonials {
+    text-align: center;
+    margin: 10% 10%;
+  }
+
+  .testimonial-container {
+    display: flex;
+    margin: 2% 1%;
+  }
+
+  #testimonials h6 {
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+
+  #testimonials p {
+    margin: 4%;
+    line-height: 1.2;
+  }
+
+  .testimonial-item {
+    width: 100%;
+    margin: 3%;
+    background-color: rgba(248, 241, 211, 0.5);
+    padding: 4%;
+  }
+
+  .fa-star,
+  .fa-star-half {
+    color: #ffbb00e4;
+    margin-bottom: 10%;
+  }
+
+  /* NEWS SECTION */
+  table,
+  td {
+    padding: 0 20px;
+  }
+
+  #news {
+    text-align: center;
+    width: 70%;
+    margin: 5% auto;
+  }
+
+  #news a {
+    color: slateblue;
+  }
+
+  #stats {
+    background-color: #8aea92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 200px;
+  }
+
+  /*FOOTER SECTION*/
+  footer {
+    background-color: #2d3047;
+    height: max-content;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 4%;
+  }
+
+  footer table {
+    margin-bottom: 1%;
+  }
+
+  footer table td,
+  footer table th {
+    padding: 15px 100px;
+    text-align: center;
+  }
+
+  .footer-sec {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .fa-brands {
+    margin: auto 20px;
+  }
+
+  .footer-links {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-links:hover {
+    color: #8aea92;
+  }
+
+  /*LOGIN PAGE*/
+  /*LOGIN PAGE*/
+
+  .login-background {
+    background-color: #2d3047;
+    height: 100vhmax;
+    padding-top: 200px;
+  }
+
+  .login-image {
+    width: 700px;
+  }
+
+  .form-container {
+    display: flex;
+    margin: auto 100px;
+  }
+
+  .greeting-box {
+    width: 50vw;
+  }
+
+  .title-message {
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  #text-highlight {
+    color: #f5ee9e;
+  }
+
+  .login-container {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .login-box {
+    background-color: #4f5373;
+    width: 70%;
+    height: 80%;
+    padding-top: 5% auto;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+  }
+
+  #password-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #email-div {
+    margin: auto;
+  }
+
+  #login-title {
+    margin: 50px auto;
+  }
+
+  .input-box {
+    width: 80%;
+    height: 2rem;
+  }
+
+  .social-icon {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #apple-icon {
+    width: 50px;
+  }
+
+  #login-btn {
+    background-color: #8aea92;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #login-btn:hover {
+    background-color: #3c9043;
+  }
+
+  .action-link {
+    color: #8aea92;
+  }
+
+  .copyright {
+    text-align: center;
+    padding-bottom: 4%;
+    margin-bottom: 0;
+    margin-top: 5%;
+    color: aliceblue;
+  }
+
+  /*SIGN UP*/
+  /*SIGN UP*/
+  /*SIGN UP*/
+
+  .sign-up-container {
+    margin-top: 100px;
+    margin-left: 1000px;
+    /* margin-right: auto; */
+    border: solid 2px rgb(126, 230, 133);
+    background-color: rgba(67, 50, 92, 0.6);
+    width: 40%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 3% 0px;
+    position: absolute;
+  }
+
+  #sign-up-title {
+    color: #8aea92;
+    margin-bottom: 50px;
+  }
+
+  .main-container input {
+    width: 70%;
+    height: 2rem;
+    /* margin-bottom: 30px; */
+    border-radius: 10px;
+  }
+
+  .sign-up-container input {
+    margin-bottom: 30px;
+  }
+
+  #terms {
+    margin: 0px 2px 0 0;
+    /*padding-right: 0px; */
+    width: 30px;
+    height: 30px;
+    /* margin-top: 50px; */
+    /* margin-top: 1px; */
+  }
+
+  #terms-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 2px;
+  }
+
+  #login-instead {
+    color: #8aea92;
+  }
+
+  #login-instead a {
+    color: rgb(223, 191, 252);
+    text-decoration: none;
+  }
+
+  #apple-icon {
+    width: 50px;
+  }
+
+  #sign-up-btn {
+    background-color: #8aea92;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #sign-up-btn:hover {
+    background-color: #ddfae0;
+  }
+
+  #bg-image {
+    width: 100%;
+  }
+
+  .main-container {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  #welcome-message {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 2rem;
+    width: 40%;
+    color: #dffe96;
+  }
+
+  #welcome-only {
+    margin-bottom: 20px;
+    color: #dffe96;
+  }
+
+  /*BUY*/
+  /*BUY*/
+  /*BUY*/
+
+  .trade-parent-container tr:nth-child(even) {
+    background-color: #f9faed;
+  }
+
+  .trade-parent-container tr:nth-child(odd) {
+    background-color: #d4f191;
+  }
+
+  #exchange-title {
+    text-align: center;
+    position: relative;
+    top: 150px;
+    background-color: #8aea92;
+    padding: 20px;
+  }
+
+  .trade-parent-container {
+    background-color: rgb(45, 48, 71, 0.1);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  .trade-container {
+    width: 100%;
+  }
+
+  .trade-option {
+    display: flex;
+  }
+
+  #buy-option {
+    width: 50%;
+  }
+
+  #buy-option-btn {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #2d3047, #7d81a2);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+  }
+
+  #sell-option {
+    width: 50%;
+  }
+
+  #sell-option-btn {
+    width: 100%;
+    height: 50px;
+  }
+
+  /* Table Styling */
+
+  .trade-container select {
+    width: 50%;
+    height: 1.5rem;
+  }
+
+  .trade-inputs {
+    width: 10rem;
+    height: 1.5rem;
+  }
+
+  .trade-container table {
+    width: 100%;
+    padding: 2px;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .trade-container td {
+    width: 15%;
+    padding: 10px;
+  }
+
+  #table-label {
+    width: 40%;
+  }
+
+  #radio-inputs {
+    margin-left: 0px;
+    width: 10px;
+    transform: scale(3);
+  }
+
+  .amounts {
+    width: 100%;
+  }
+
+  .wallet-inputs {
+    width: 100%;
+  }
+
+  #momo-wallet {
+    width: 50%;
+  }
+
+  #buy-btn {
+    width: 50%;
+    height: 2.5rem;
+    margin-left: 25%;
+    margin-right: auto;
+    background-image: linear-gradient(to top, rgb(38, 195, 88), #8aea92);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(120, 149, 135);
+  }
+
+  .momo-networks {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .caution {
+    text-align: center;
+    background-color: #f7afaf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .caution-item {
+    margin-bottom: 10px;
+  }
+
+  /*ABOUT PAGE*/
+  /*ABOUT PAGE*/
+  /*ABOUT PAGE*/
+
+  #about-us-banner {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .main-container {
+    margin-top: -10px;
+  }
+
+  .about-titles {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  #logo-container {
+    /* position:absolute;
+  top: 600px; */
+    display: flex;
+    align-content: center;
+    left: 90px;
+  }
+
+  #cedii-logo-sign {
+    height: 200px;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  #cedii-logo {
+    color: #8aea92;
+    font-size: 250px;
+    /* margin: 20px; */
+    display: inline-block;
+    align-self: center;
+  }
+
+  #logo-parent-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 300px;
+    left: 80px;
+  }
+
+  #cover-feature-container {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+  }
+
+  .cover-features {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
+  }
+
+  #about-company,
+  #faq,
+  #terms {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+  }
+
+  #faq {
+    margin-top: 10%;
+  }
+
+  #faq-section {
+    background-color: rgba(246, 241, 249, 0.638);
+    margin-bottom: 10%;
+  }
+
+  .copyright {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  /*SUPPORT*/
+  /*SUPPORT*/
+  /*SUPPORT*/
+
+  .support-text-box {
+    width: 150%;
+    height: 30px;
+    margin-bottom: 5%;
+  }
+
+  #message-box {
+    height: 200px;
+    width: 150%;
+  }
+
+  .main-support {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    margin: 5% auto;
+  }
+
+  .top-container {
+    display: flex;
+    gap: 20rem;
+    margin: 5% auto;
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .find-us {
+    margin: 10% 0;
+    width: 100%;
+  }
+
+  .find-us .fa-brands:hover {
+    color: #444444;
+  }
+
+  .find-us .fa-brands {
+    margin: 8% 5%;
+  }
+
+  .support-copyright {
+    text-align: center;
+  }
 }
 
-/* .socials {
-    display: inline;
-    margin-left: 100px;
-} */
+@media (min-width: 1114px) and (max-width: 1493px) {
+  /*NAV BAR*/
+  nav {
+    background-color: #2d3047;
+    color: #fafdf6;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
 
-footer .fa-brands {
-  margin: auto 20px;
+  .nav-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-brand {
+    margin-right: auto;
+    margin-left: 1%;
+    color: #8aea92;
+    font-size: 1.5rem;
+    border: solid 0.5px #8aea92;
+    background-color: #2d3047;
+    padding: 0 2px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 0.20rem;
+  }
+
+  .nav-link {
+    padding: 20px;
+  }
+
+  .nav-cta {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-container a {
+    color: #fafdf6;
+    text-decoration: none;
+  }
+
+  .nav-container a:hover {
+    background-image: linear-gradient(to right, #8aea92, #2d3047);
+  }
+
+  #cedi {
+    color: #f5ee9e;
+    padding: 0;
+  }
+
+  #cedi-sign {
+    height: 27px;
+    color: #f5ee9e;
+    filter: grayscale(50%);
+  }
+
+  .wrapper {
+    position: static;
+    /* height: 50px; */
+    margin-left: 2%;
+
+    transform: translate(-10%, -10%);
+  }
+
+  .searchbox {
+    position: relative;
+  }
+
+  .searchbox .input {
+    width: 0px;
+    border: 0px;
+    height: 40px;
+    padding: 0px 35px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px 1px #b6bbc0;
+    outline: none;
+    color: #42be11;
+    font-weight: bold;
+    font-size: 24px;
+    transition: all 0.5s linear;
+  }
+
+  .searchbtn {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s 0.6s linear;
+  }
+
+  .searchbtn .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #42be11;
+    font-size: 22px;
+    transition: all 0.5s 0.6s linear;
+  }
+
+  /* jquery class */
+  .searchbtn.bg-green {
+    background: #42be11;
+    transition: all 0.2s linear;
+  }
+
+  .searchbtn .fas.color-white {
+    color: #fff;
+    transition: all 0.2s linear;
+  }
+
+  .searchbox .input.active-width {
+    width: 190px;
+  }
+
+  #log-in,
+  #sign-up {
+    margin-right: 10px;
+    width: 80%;
+    background-color: transparent;
+    color: white;
+    height: 50px;
+    border-color: #8aea92;
+    font-weight: bold;
+    font-size: 0.6rem;
+  }
+
+  #sign-up {
+    background-color: #f5ee9e;
+    width: 100%;
+    border-style: none;
+    color: #2d3047;
+  }
+
+  #log-in:hover,
+  #sign-up:hover {
+    background-color: #96ee9dba;
+    cursor: pointer;
+  }
+
+
+  /*TITLE*/
+  .featured-container {
+    margin-top: 0;
+  }
+
+  #featured-image {
+    position: relative;
+    width: 110%;
+  }
+
+  #momo-img {
+    width: 200px;
+    margin-top: 20px;
+  }
+
+  #crypto-img {
+    width: 100px;
+    position: absolute;
+    top: 550px;
+    left: 650px;
+  }
+
+  .featured-message {
+    width: 42%;
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+    font-size: 2rem;
+    margin-top: 5%;
+    margin-left: 5%;
+    padding: 2%;
+    text-align: left;
+    border: solid rgba(45, 48, 71, 0.08) 8px;
+  }
+
+  .large-title {
+    font-weight: bold;
+    color: #50cb5af3;
+    text-shadow: 2px 2px #2d3047;
+    font-size: 1.8rem;
+  }
+
+  #momo-title {
+    color: #f7e40a;
+  }
+
+  .small-title {
+    margin: 0;
+    color: #2d3047;
+    font-size: 1.3rem;
+  }
+
+  .trade-btn {
+    position: absolute;
+    top: 600px;
+    margin-left: 5%;
+    width: 200px;
+    height: 60px;
+    background-color: #8aea92;
+    color: #2d3047;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.09),
+      0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .trade-btn:hover {
+    background-color: #2d3047;
+    color: white;
+    cursor: pointer;
+  }
+
+  /*FEATURES SECTION*/
+
+  #features {
+    text-align: center;
+    margin-top: 8%;
+  }
+
+  .features-container {
+    display: flex;
+
+    justify-content: center;
+    margin: 2% 10%;
+    padding: 0 5%;
+  }
+
+  .feature-item {
+    margin: auto 5%;
+  }
+
+  /*PRICES SECTION*/
+  #pricing {
+    background-color: #2d3047;
+    text-align: center;
+    color: #fff;
+    padding-top: 3%;
+    margin: 5% auto;
+  }
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .coin {
+    text-align: center;
+    padding: 2%;
+    font-size: 1.5rem;
+    border: solid 1px rgb(24, 26, 39);
+    border-radius: 15px;
+    background-color: #383c5d;
+
+    margin: auto 1%;
+  }
+
+  .coin:hover {
+    background-color: #585d8a;
+  }
+
+  .coin-icon {
+    height: 200px;
+  }
+
+  #pricing .trade-btn {
+    position: static;
+    margin: auto;
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  #pricing span {
+    margin-left: 15px;
+  }
+
+  /*TESTIMONIALS*/
+
+  #testimonials {
+    text-align: center;
+    margin: 10% 10%;
+  }
+
+  .testimonial-container {
+    display: flex;
+    margin: 2% 1%;
+  }
+
+  #testimonials h6 {
+    font-size: 1.2rem;
+    margin: 5px;
+  }
+
+  #testimonials p {
+    margin: 4%;
+    line-height: 1.2;
+  }
+
+  .testimonial-item {
+    width: 100%;
+    margin: 1%;
+    background-color: rgba(248, 241, 211, 0.5);
+    padding: 4%;
+  }
+
+  .fa-star,
+  .fa-star-half {
+    color: #ffbb00e4;
+    margin-bottom: 10%;
+  }
+
+  /* NEWS SECTION */
+  table,
+  td {
+    padding: 0 20px;
+  }
+
+  #news {
+    text-align: center;
+    width: 70%;
+    margin: 5% auto;
+  }
+
+  #news a {
+    color: slateblue;
+  }
+
+  #stats {
+    background-color: #8aea92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 200px;
+  }
+
+  /*FOOTER SECTION*/
+  footer {
+    background-color: #2d3047;
+    height: max-content;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 4%;
+  }
+
+  footer table {
+    margin-bottom: 1%;
+  }
+
+  footer table td,
+  footer table th {
+    padding: 15px 60px;
+    text-align: center;
+  }
+
+  .footer-sec {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .fa-brands {
+    margin: auto 20px;
+  }
+
+  .footer-links {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-links:hover {
+    color: #8aea92;
+  }
 }
 
-footer table {
-  margin-bottom: 1%;
+@media (max-width: 1148px) {
+  /*NAV BAR*/
+  nav {
+    background-color: #2d3047;
+    color: #fafdf6;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-brand {
+    margin-right: auto;
+    margin-left: 1%;
+    color: #8aea92;
+    font-size: 1.3rem;
+    border: solid 0.5px #8aea92;
+    background-color: #2d3047;
+    padding: 0 2px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 0.22rem;
+  }
+
+  .nav-link {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .nav-cta {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-container a {
+    color: #fafdf6;
+    text-decoration: none;
+  }
+
+  .nav-container a:hover {
+    background-image: linear-gradient(to right, #8aea92, #2d3047);
+  }
+
+  #cedi {
+    color: #f5ee9e;
+    padding: 0;
+  }
+
+  #cedi-sign {
+    height: 24px;
+    color: #f5ee9e;
+
+    filter: grayscale(50%);
+  }
+
+  .wrapper {
+    position: static;
+    height: 50px;
+    margin-left: 2%;
+
+    transform: translate(-10%, -10%);
+  }
+
+  .searchbox {
+    position: relative;
+  }
+
+  .searchbox .input {
+    width: 0px;
+    border: 0px;
+    height: 40px;
+    padding: 0px 35px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 1px #b6bbc0;
+    outline: none;
+    color: #42be11;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s linear;
+  }
+
+  .searchbtn {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s 0.6s linear;
+  }
+
+  .searchbtn .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #42be11;
+    font-size: 22px;
+    transition: all 0.5s 0.6s linear;
+  }
+
+  /* jquery class */
+  .searchbtn.bg-green {
+    background: #42be11;
+    transition: all 0.2s linear;
+  }
+
+  .searchbtn .fas.color-white {
+    color: #fff;
+    transition: all 0.2s linear;
+  }
+
+  .searchbox .input.active-width {
+    width: 100px;
+  }
+
+  #log-in,
+  #sign-up {
+    margin-right: 10px;
+    width: 80%;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    border-color: #8aea92;
+    font-weight: bold;
+    font-size: 0.5rem;
+  }
+
+  #sign-up {
+    background-color: #f5ee9e;
+    width: 80%;
+    border-style: none;
+    color: #2d3047;
+  }
+
+  #log-in:hover,
+  #sign-up:hover {
+    background-color: #96ee9dba;
+    cursor: pointer;
+  }
+
+  /*TITLE*/
+  .featured-container {
+    margin-top: 0;
+  }
+
+  #featured-image {
+    position: relative;
+    width: 100%;
+  }
+
+  #momo-img {
+    width: 120px;
+    margin-top: 20px;
+  }
+
+  #crypto-img {
+    width: 80px;
+    position: absolute;
+    top: 400px;
+    left: 450px;
+  }
+
+  .featured-message {
+    width: 42%;
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+    font-size: 2rem;
+    margin-top: 4%;
+    margin-left: 5%;
+    padding: 2%;
+    text-align: left;
+    border: solid rgba(45, 48, 71, 0.08) 10px;
+  }
+
+  .large-title {
+    font-weight: bold;
+    color: #50cb5af3;
+    text-shadow: 2px 2px #2d3047;
+    font-size: 1.7rem;
+  }
+
+  #momo-title {
+    color: #f7e40a;
+  }
+
+  .small-title {
+    margin: 0;
+    color: #2d3047;
+    font-size: 1.3rem;
+  }
+
+  .trade-btn {
+    position: absolute;
+    top: 500px;
+    margin-left: 5%;
+    width: 150px;
+    height: 50px;
+    background-color: #8aea92;
+    color: #2d3047;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;
+    border-style: none;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.09),
+      0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .trade-btn:hover {
+    background-color: #2d3047;
+    color: white;
+    cursor: pointer;
+  }
+
+  /*FEATURES SECTION*/
+
+  #features {
+    text-align: center;
+    margin-top: 8%;
+  }
+
+  .features-container {
+    display: flex;
+
+    justify-content: center;
+    margin: 2% 10%;
+    padding: 0 5%;
+  }
+
+  .feature-item {
+    margin: auto 5%;
+  }
+
+  /*PRICES SECTION*/
+  #pricing {
+    background-color: #2d3047;
+    text-align: center;
+    color: #fff;
+    padding-top: 3%;
+    margin: 5% auto;
+  }
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+  }
+
+  .coin {
+    text-align: center;
+    padding: 2%;
+    font-size: 1.5rem;
+    border: solid 1px rgb(24, 26, 39);
+    border-radius: 15px;
+    background-color: #383c5d;
+
+    margin: auto 1%;
+  }
+
+  .coin:hover {
+    background-color: #585d8a;
+  }
+
+  .coin-icon {
+    height: 150px;
+  }
+
+  #pricing .trade-btn {
+    position: static;
+    margin: auto;
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  #pricing span {
+    margin-left: 0;
+  }
+
+  .section-titles {
+    font-size: 1.2rem;
+  }
+
+  #pricing h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  /*TESTIMONIALS*/
+
+  #testimonials {
+    text-align: center;
+    margin: 10% 5%;
+  }
+
+  .testimonial-container {
+    display: flex;
+    margin: 2% 1%;
+  }
+
+  #testimonials h6 {
+    font-size: 1rem;
+    margin: 5px;
+  }
+
+  #testimonials p {
+    margin: 4%;
+    line-height: 1.3;
+  }
+
+  .testimonial-item {
+    width: 100%;
+    margin: 1%;
+    background-color: rgba(248, 241, 211, 0.5);
+    padding: 4%;
+  }
+
+  .fa-star,
+  .fa-star-half {
+    color: #ffbb00e4;
+    margin-bottom: 10%;
+  }
+
+  /* NEWS SECTION */
+  table,
+  td {
+    padding: 0 20px;
+  }
+
+  #news {
+    text-align: center;
+    width: 70%;
+    margin: 5% auto;
+  }
+
+  #news a {
+    color: slateblue;
+  }
+
+  #stats {
+    background-color: #8aea92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 200px;
+  }
+
+  /*FOOTER SECTION*/
+  footer {
+    background-color: #2d3047;
+    height: max-content;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 4%;
+  }
+
+  footer table {
+    margin-bottom: 1%;
+  }
+
+  footer table td,
+  footer table th {
+    padding: 15px 60px;
+    text-align: center;
+  }
+
+  .footer-sec {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .fa-brands {
+    margin: auto 20px;
+  }
+
+  .footer-links {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-links:hover {
+    color: #8aea92;
+  }
 }
 
-.footer-links {
-  text-decoration: none;
-  color: #fff;
+@media (min-width: 768px) and (max-width: 1147px) {
+  /*NAV BAR*/
+  nav {
+    background-color: #2d3047;
+    color: #fafdf6;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    padding-bottom: 2%;
+  }
 
+  .nav-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .nav-brand {
+    margin-right: auto;
+    margin-left: 1%;
+    color: #8aea92;
+    font-size: 1.1rem;
+    border: solid 0.5px #8aea92;
+    background-color: #2d3047;
+    padding: 0 1px;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    gap: 0.1rem;
+  }
+
+  .nav-link {
+    padding: 10px;
+    font-size: 0.88rem;
+  }
+
+  .nav-cta {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-container a {
+    color: #fafdf6;
+    text-decoration: none;
+  }
+
+  .nav-container a:hover {
+    background-image: linear-gradient(to right, #8aea92, #2d3047);
+  }
+
+  #cedi {
+    color: #f5ee9e;
+    padding: 0;
+  }
+
+  #cedi-sign {
+    height: 24px;
+    color: #f5ee9e;
+
+    filter: grayscale(50%);
+  }
+
+  .wrapper {
+    position: static;
+    height: 30px;
+    margin-left: 2%;
+
+    transform: translate(-10%, -10%);
+  }
+
+  .searchbox {
+    position: relative;
+  }
+
+  .searchbox .input {
+    width: 0px;
+    border: 0px;
+    height: 30px;
+    padding: 0px 35px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 1px #b6bbc0;
+    outline: none;
+    color: #42be11;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s linear;
+  }
+
+  .searchbtn {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s 0.6s linear;
+  }
+
+  .searchbtn .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #42be11;
+    font-size: 22px;
+    transition: all 0.5s 0.6s linear;
+  }
+
+  /* jquery class */
+  .searchbtn.bg-green {
+    background: #42be11;
+    transition: all 0.2s linear;
+  }
+
+  .searchbtn .fas.color-white {
+    color: #fff;
+    transition: all 0.2s linear;
+  }
+
+  .searchbox .input.active-width {
+    width: 80px;
+  }
+
+  #log-in,
+  #sign-up {
+    margin-right: 10px;
+    width: 90%;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    border-color: #8aea92;
+    font-weight: bold;
+    font-size: 0.6rem;
+  }
+
+  #sign-up {
+    background-color: #f5ee9e;
+    width: 110%;
+    border-style: none;
+    color: #2d3047;
+  }
+
+  #log-in:hover,
+  #sign-up:hover {
+    background-color: #96ee9dba;
+    cursor: pointer;
+  }
+
+  /*TITLE*/
+  .featured-container {
+    margin-top: 0;
+  }
+
+  #featured-image {
+    margin-top: 90px;
+    position: relative;
+    width: 120%;
+  }
+
+  #momo-img {
+    width: 120px;
+    margin-top: 20px;
+  }
+
+  #crypto-img {
+    width: 80px;
+    position: absolute;
+    top: 400px;
+    left: 450px;
+  }
+
+  .featured-message {
+    width: 49%;
+    position: absolute;
+    top: 15%;
+    z-index: 0;
+    font-size: 2rem;
+    margin-top: 4%;
+    margin-left: 2%;
+    padding: 2%;
+    text-align: left;
+    border: solid rgba(45, 48, 71, 0.08) 5px;
+  }
+
+  .large-title {
+    font-weight: bold;
+    color: #50cb5af3;
+    text-shadow: 1px 1px #2d3047;
+    font-size: 1.4rem;
+  }
+
+  #momo-title {
+    color: #f7e40a;
+  }
+
+  .small-title {
+    margin: 0;
+    color: #2d3047;
+    font-size: 1rem;
+  }
+
+  .trade-btn {
+    position: absolute;
+    top: 450px;
+    margin-left: 5%;
+    width: 100px;
+    height: 40px;
+    background-color: #8aea92;
+    color: #2d3047;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.09),
+      0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .trade-btn:hover {
+    background-color: #2d3047;
+    color: white;
+    cursor: pointer;
+  }
+
+  /*FEATURES SECTION*/
+
+  #features {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .features-container {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    margin: 2% 10%;
+    padding: 0 5%;
+  }
+
+  .feature-icon {
+    transform: scale(0.7);
+  }
+
+  .feature-item {
+    margin: 5% 5%;
+  }
+
+  /*PRICES SECTION*/
+  #pricing {
+    background-color: #2d3047;
+    text-align: center;
+    color: #fff;
+    padding-top: 3%;
+    margin: 5% auto;
+  }
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    flex-wrap: wrap;
+  }
+
+  .coin {
+    text-align: center;
+    padding: 2%;
+    font-size: 1.5rem;
+    border: solid 1px rgb(24, 26, 39);
+    border-radius: 15px;
+    background-color: #383c5d;
+
+    margin: auto 1%;
+  }
+
+  #dogecoin,
+  #usdt,
+  #ethereum,
+  #bitcoin {
+    flex: 0 0 30%;
+    margin-top: 2%;
+  }
+
+  .coin:hover {
+    background-color: #585d8a;
+  }
+
+  .coin-icon {
+    height: 200px;
+  }
+
+  #pricing .trade-btn {
+    position: static;
+    margin: auto;
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  #pricing span {
+    margin-left: 0;
+  }
+
+  .section-titles {
+    font-size: 1.2rem;
+  }
+
+  #pricing h5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  /*TESTIMONIALS*/
+
+  #testimonials {
+    text-align: center;
+    margin: 10% 5%;
+  }
+
+  .testimonial-container {
+    display: flex;
+    margin: 2% 1%;
+    flex-wrap: wrap;
+  }
+
+  #testimonials h6 {
+    font-size: 1rem;
+    margin: 5px;
+  }
+
+  #testimonials p {
+    margin: 4%;
+    line-height: 1.3;
+  }
+
+  .testimonial-item {
+    width: 100%;
+    margin: 1%;
+    background-color: rgba(248, 241, 211, 0.5);
+    padding: 4%;
+  }
+
+  .fa-star,
+  .fa-star-half {
+    color: #ffbb00e4;
+    margin-bottom: 10%;
+  }
+
+  /* NEWS SECTION */
+  table,
+  td {
+    padding: 0 20px;
+  }
+
+  #news {
+    text-align: center;
+    width: 70%;
+    margin: 5% auto;
+  }
+
+  #news a {
+    color: slateblue;
+  }
+
+  #stats {
+    background-color: #8aea92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 200px;
+  }
+
+  /*FOOTER SECTION*/
+  footer {
+    background-color: #2d3047;
+    height: max-content;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 4%;
+  }
+
+  footer table {
+    margin-bottom: 1%;
+  }
+
+  footer table td,
+  footer table th {
+    padding: 10px 50px;
+    text-align: center;
+  }
+
+  .footer-sec {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  footer .fa-brands {
+    margin: 5px 20px;
+  }
+
+  .footer-links {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-links:hover {
+    color: #8aea92;
+  }
 }
-.footer-links:hover {
-  color:#8aea92;
+
+@media (max-width: 767px) {
+  
 }
