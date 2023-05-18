@@ -6,147 +6,174 @@
     <title>cedii</title>
 
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600&family=Quicksand:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"> </script>
-
-
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
   </head>
+
   <body>
-    
-
     <!-- TITLE SECTION -->
-    <script src="https://kit.fontawesome.com/c6f9e892e6.js" crossorigin="anonymous"></script>
-    
+    <script
+      src="https://kit.fontawesome.com/c6f9e892e6.js"
+      crossorigin="anonymous"
+    ></script>
+
     <section id="title">
-      
-        <nav class="nav-container">
-            <!-- <h1 class="nav-brand"><span id="cedi">₵</span></h1> -->
-            <h1 class="nav-brand"><span id="cedi"><img id="cedi-sign" src="images/My project small.png" </span>EDII</h1>
-          
-            <ul class="nav-menu"type="none">
-              <li><a  class="nav-link" href="index.html">Home</a></li>
-              <li><a  class="nav-link" href="buy.html">Trade</a></li>
-             
-              <li><a  class="nav-link" href="#pricing">Prices</a></li>
-              <li><a  class="nav-link" href="support.html">Support</a></li>
-              <li><a  class="nav-link" href="about.html">About</a></li>
-              <li><a  class="nav-link" href="about.html">FAQ</a></li>
+      <nav class="nav-container" id="navbar">
+        <h1 class="nav-brand">
+          <span id="cedi"
+            ><img id="cedi-sign" src="images/My project small.png" /></span
+          >EDII
+        </h1>
 
-                            
-<div class="wrapper">
-  <div class="searchbox">
-    <input type="text" class="input">
-      
-    <div class="searchbtn">
-      <i class="fas fa-search"></i>
-    </div>
-    
-  </div>
-</div>
-</ul>
+        <ul id="nav-menu" type="none">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a class="nav-link" href="buy.html">Trade</a></li>
 
+          <li><a class="nav-link" href="#pricing">Prices</a></li>
+          <li><a class="nav-link" href="support.html">Support</a></li>
+          <li><a class="nav-link" href="about.html">About</a></li>
+          <li><a class="nav-link" href="about.html">FAQ</a></li>
+        </ul>
 
-         
-          <div class="nav-cta">
-            <form action="login.html">
-            <input type="submit" value="LOGIN" class="registration" id="log-in">
+        <div class="wrapper">
+          <div class="searchbox">
+            <input type="text" class="input" />
+
+            <div class="searchbtn">
+              <i class="fas fa-search"></i>
+            </div>
+          </div>
+        </div>
+
+        <div id="nav-cta">
+          <form action="login.html">
+            <input
+              type="submit"
+              value="LOGIN"
+              class="registration"
+              id="log-in"
+            />
           </form>
 
-            <form action="sign-up.html">
-            <input type="submit" class="registration" id="sign-up" value="SIGN UP">
+          <form action="sign-up.html">
+            <input
+              type="submit"
+              class="registration"
+              id="sign-up"
+              value="SIGN UP"
+            />
           </form>
+        </div>
+      </nav>
 
-         
-          </div>
-        </nav>
+      <img
+        id="toggler"
+        class="humburger-icon"
+        src="images/hamburger.png"
+        alt="icon"
+      />
 
-
-        <div class="featured-container">
-          <div><img id="featured-image" src="images/featured_image.jpg" alt="" /></div>
-          <div class="featured-message">
-                    
-              <h2 class="large-title">BUY OR SELL YOUR CRYPTO WITH <span id="momo-title">MOMO!</span></h2>
-            <h4 class="small-title">Receive money in your wallet</h4>
-            <h4 class="small-title">Instantly</h4>
-          <img id="momo-img" src="images/momo-img.png" alt="">
-          </div>
-          <img src="images/vecteezy_cryptocurrency-3d-illustration_11064692_686.png" id="crypto-img">
-          <form action="buy.html">
-          <input type="submit" class="trade-btn" value="TRADE"></form>
-        
+      <div class="featured-container">
+        <div>
+          <img id="featured-image" src="images/featured_image.jpg" alt="" />
+        </div>
+        <div id="featured-message">
+          <h2 class="large-title">
+            BUY OR SELL YOUR CRYPTO WITH <span id="momo-title">MOMO!</span>
+          </h2>
+          <h4 class="small-title">Receive money in your wallet</h4>
+          <h4 class="small-title">Instantly</h4>
+          <img id="momo-img" src="images/momo-img.png" alt="" />
+        </div>
+        <img
+          src="images/vecteezy_cryptocurrency-3d-illustration_11064692_686.png"
+          id="crypto-img"
+        />
+        <form action="buy.html">
+          <input type="submit" class="trade-btn" value="TRADE" />
+        </form>
+      </div>
       
     </section>
-    <!-- <hr /> -->
-
 
     <!-- FEATURES SECTION -->
     <section id="features">
       <h2 class="section-titles">FEATURES</h2>
       <div class="features-container">
-      <div class="feature-1 feature-item">
-        <h3><i class="feature-icon fa-solid fa-bolt fa-4x"></i>Instant</h3>
-        <p>Receive your asset instantly without any delay</p>
+        <div class="feature-1 feature-item">
+          <h3><i class="feature-icon fa-solid fa-bolt fa-4x"></i>Instant</h3>
+          <p>Receive your asset instantly without any delay</p>
+        </div>
+        <div class="feature-2 feature-item">
+          <h3>
+            <i class="feature-icon fa-sharp fa-solid fa-lock fa-4x"></i> Secure
+          </h3>
+          <p>Your assets are sevured with the a strong encryption</p>
+        </div>
+        <div class="feature-3 feature-item">
+          <h3>
+            <img
+              class="feature-icon"
+              src="images/lowest-price.png"
+              height="117px"
+            />
+            Low Charges
+          </h3>
+          <p>Pay little or no charge for each transaction you make</p>
+        </div>
       </div>
-      <div class="feature-2 feature-item">
-        <h3><i class="feature-icon fa-sharp fa-solid fa-lock fa-4x"></i> Secure</h3>
-        <p>Your assets are sevured with the a strong encryption</p>
-      </div>
-      <div class="feature-3 feature-item">
-        <h3><img class="feature-icon" src="images/lowest-price.png" height="117px"> Low Charges</h3>
-        <p>Pay little or no charge for each transaction you make</p>
-      </div>
-    </div>
-      </section>
+    </section>
 
     <!-- <hr /> -->
 
     <!-- LIVE PRICES SECTION -->
     <section id="pricing">
-
       <h2 class="section-titles">LIVE PRICES</h2>
-    <div class="pricing-container">
-      <div class="coin" id="bitcoin">
-        <img class="coin-icon" src="images/bitcoin.png">
-        <h5>Bitcoin</h5>
-        <h5>GH₵‎<span id="btcPrice"></span></h5>
-        <form action="buy.html">
-        <input class="trade-btn" type="submit" value="TRADE">
-      </form>
-      </div>
+      <div class="pricing-container">
+        <div class="coin" id="bitcoin">
+          <img class="coin-icon" src="images/bitcoin.png" />
+          <h5>Bitcoin</h5>
+          <h5>GH₵‎<span id="btcPrice"></span></h5>
+          <form action="buy.html">
+            <input class="trade-btn" type="submit" value="TRADE" />
+          </form>
+        </div>
 
-      <div class="coin" id="ethereum">
-        <img class="coin-icon" src="images/ethereum.png">
-        <h5>Ethereum</h5>
-        <h5>GH₵‎<span id="ethPrice"></span></h5>
-       
-        <form action="buy.html">
-        <input class="trade-btn" type="submit" value="TRADE">
-      </form>
-      </div>
+        <div class="coin" id="ethereum">
+          <img class="coin-icon" src="images/ethereum.png" />
+          <h5>Ethereum</h5>
+          <h5>GH₵‎<span id="ethPrice"></span></h5>
 
-      <div class="coin" id="dogecoin">
-        <img class="coin-icon" src="images/dogecoin.png">
-        <h5>Dogecoin</h5>
-        <h5>GH₵‎<span id="dgePrice"></span></h5>
-        <form action="buy.html">
-          <input class="trade-btn" type="submit" value="TRADE">
-        </form>
-      </div>
+          <form action="buy.html">
+            <input class="trade-btn" type="submit" value="TRADE" />
+          </form>
+        </div>
 
-      <div class="coin" id="usdt">
-        <img class="coin-icon" src="images/tether.png">
-        <h5>USDT</h5>
-        <h5>GH₵‎<span id="usdtPrice"></span></h5>
-        
-        <form action="buy.html">
-          <input class="trade-btn" type="submit" value="TRADE">
-        </form>
-      </div>
-    </div>
+        <div class="coin" id="dogecoin">
+          <img class="coin-icon" src="images/dogecoin.png" />
+          <h5>Dogecoin</h5>
+          <h5>GH₵‎<span id="dgePrice"></span></h5>
+          <form action="buy.html">
+            <input class="trade-btn" type="submit" value="TRADE" />
+          </form>
+        </div>
 
+        <div class="coin" id="usdt">
+          <img class="coin-icon" src="images/tether.png" />
+          <h5>USDT</h5>
+          <h5>GH₵‎<span id="usdtPrice"></span></h5>
+
+          <form action="buy.html">
+            <input class="trade-btn" type="submit" value="TRADE" />
+          </form>
+        </div>
+      </div>
     </section>
     <!-- <hr /> -->
 
@@ -156,52 +183,49 @@
       <h5>People love Cedii</h5>
 
       <div class="testimonial-container">
-      <div class="testimonial-item testimonial-item-1">
-      <h6>It is supper fast!</h6>
-      <p>
-        I've been using cedii for a while now and I must admit, it's the best
-        when it comes to speed. My asset always arrive in my wallet within few
-        seconds of transaction
-      </p>
-      
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <p><em>Kweku Frimpong, Accra</em></p>
-    </div>
+        <div class="testimonial-item testimonial-item-1">
+          <h6>It is supper fast!</h6>
+          <p>
+            I've been using cedii for a while now and I must admit, it's the
+            best when it comes to speed. My asset always arrive in my wallet
+            within few seconds of transaction
+          </p>
 
-    <div class="testimonial-item testimonial-item-2">
-      <h6>Trustworthy exchange</h6>
-      <p>
-        I have used cedii for about 5 years now and I can say it's the exchange
-        platform you can trust
-      </p>
-     <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <p><em>Magdalene A. K, Accra</em></p>
-    </div>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <p><em>Kweku Frimpong, Accra</em></p>
+        </div>
 
+        <div class="testimonial-item testimonial-item-2">
+          <h6>Trustworthy exchange</h6>
+          <p>
+            I have used cedii for about 5 years now and I can say it's the
+            exchange platform you can trust
+          </p>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <p><em>Magdalene A. K, Accra</em></p>
+        </div>
 
-      <div class="testimonial-item testimonial-item-3">
-      <h6>Simply the best</h6>
-      <p>Their pricing and charges are very cheap. I love it</p>
+        <div class="testimonial-item testimonial-item-3">
+          <h6>Simply the best</h6>
+          <p>Their pricing and charges are very cheap. I love it</p>
 
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star"></i>
-      <i class="fa-sharp fa-regular fa-star-half"></i>
-      
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star"></i>
+          <i class="fa-sharp fa-regular fa-star-half"></i>
 
-      <p><em>James Seynu, Kumasi</em></p>
-</div>
-</div>
-    
+          <p><em>James Seynu, Kumasi</em></p>
+        </div>
+      </div>
     </section>
     <!-- <hr /> -->
 
@@ -212,10 +236,11 @@
         <table cell spacing="40px">
           <tr>
             <td>
-              <p><a href="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut
-              </a>
+              <p>
+                <a href="">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut
+                </a>
               </p>
             </td>
             <td>
@@ -224,10 +249,11 @@
           </tr>
           <tr>
             <td>
-              <p><a href="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut
-              </a>
+              <p>
+                <a href="">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut
+                </a>
               </p>
             </td>
             <td>
@@ -236,9 +262,10 @@
           </tr>
           <tr>
             <td>
-              <p><a href="">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut
+              <p>
+                <a href="">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut
                 </a>
               </p>
             </td>
@@ -274,14 +301,16 @@
 
             <th>About</th>
             <th>Socials</th>
-
           </thead>
           <tbody>
             <tr>
               <td><a class="footer-links" href="buy.html">Buy Crypto</a></td>
               <td><a href="about.html" class="footer-links">About Us</a></td>
-              <td><a class="footer-links" href="support.html">Customer Support</a></td>
-              <td><i class="fa-brands fa-facebook"></i>
+              <td>
+                <a class="footer-links" href="support.html">Customer Support</a>
+              </td>
+              <td>
+                <i class="fa-brands fa-facebook"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <i class="fa-brands fa-instagram"></i>
                 <i class="fa-brands fa-linkedin"></i>
@@ -289,12 +318,16 @@
             </tr>
             <tr>
               <td><a class="footer-links" href="buy.html">Sell Crypto</a></td>
-              <td><a class="footer-links" href="about.html">Terms and conditions</a></td>
+              <td>
+                <a class="footer-links" href="about.html"
+                  >Terms and conditions</a
+                >
+              </td>
               <td><a class="footer-links" href="support.html">Find Us</a></td>
             </tr>
             <tr>
               <td><a href="" class="footer-links">News</a></td>
-              <td><a href="" class="footer-links" >Privacy</a></td>
+              <td><a href="" class="footer-links">Privacy</a></td>
               <td></td>
             </tr>
             <tr>
@@ -304,12 +337,10 @@
             </tr>
           </tbody>
         </table>
-      
-
       </div>
       <p>©cedii 2023</p>
     </footer>
-  
+
     <script src="app.js"></script>
   </body>
 </html>

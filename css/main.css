@@ -49,7 +49,11 @@ h4 {
     cursor: pointer;
   }
 
-  .nav-menu {
+#toggler {
+  display: none;
+}
+
+  #nav-menu {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -60,7 +64,7 @@ h4 {
     padding: 20px;
   }
 
-  .nav-cta {
+  #nav-cta {
     display: flex;
     flex-direction: row;
     margin-left: auto;
@@ -196,7 +200,7 @@ h4 {
     left: 750px;
   }
 
-  .featured-message {
+  #featured-message {
     width: 45%;
     position: absolute;
     top: 100px;
@@ -917,23 +921,31 @@ h4 {
     cursor: pointer;
   }
 
-  .nav-menu {
+  #nav-menu {
     display: flex;
     flex-direction: row;
     text-align: center;
-    gap: 0.20rem;
+    gap: 0.2rem;
   }
 
   .nav-link {
     padding: 20px;
   }
 
-  .nav-cta {
+  #nav-cta {
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
   }
+
+  #toggler {
+    display: none;
+  }
+
+
 
   .nav-container a {
     color: #fafdf6;
@@ -1043,7 +1055,6 @@ h4 {
     cursor: pointer;
   }
 
-
   /*TITLE*/
   .featured-container {
     margin-top: 0;
@@ -1066,7 +1077,7 @@ h4 {
     left: 650px;
   }
 
-  .featured-message {
+  #featured-message {
     width: 42%;
     position: absolute;
     top: 100px;
@@ -1308,7 +1319,7 @@ h4 {
     cursor: pointer;
   }
 
-  .nav-menu {
+  #nav-menu {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -1320,11 +1331,13 @@ h4 {
     font-size: 0.9rem;
   }
 
-  .nav-cta {
+  #nav-cta {
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+
+
   }
 
   .nav-container a {
@@ -1458,7 +1471,7 @@ h4 {
     left: 450px;
   }
 
-  .featured-message {
+  #featured-message {
     width: 42%;
     position: absolute;
     top: 100px;
@@ -1713,7 +1726,7 @@ h4 {
     cursor: pointer;
   }
 
-  .nav-menu {
+  #nav-menu {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -1725,11 +1738,29 @@ h4 {
     font-size: 0.88rem;
   }
 
-  .nav-cta {
+  #toggler {
+    display: none;
+    /* filter: invert(100%);
+    width: 40px;
+    z-index: 3; */
+  }
+
+  .humburger-icon {
+    /* width: 50px;
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    cursor: pointer; */
+    display: none;
+  }
+
+  #nav-cta {
     display: flex;
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
+  
+    
   }
 
   .nav-container a {
@@ -1847,7 +1878,7 @@ h4 {
   }
 
   #featured-image {
-    margin-top: 90px;
+    /* margin-top: 90px; */
     position: relative;
     width: 120%;
   }
@@ -1864,7 +1895,7 @@ h4 {
     left: 450px;
   }
 
-  .featured-message {
+  #featured-message {
     width: 49%;
     position: absolute;
     top: 15%;
@@ -1875,6 +1906,7 @@ h4 {
     padding: 2%;
     text-align: left;
     border: solid rgba(45, 48, 71, 0.08) 5px;
+    /* z-index: 1; */
   }
 
   .large-title {
@@ -2105,5 +2137,467 @@ h4 {
 }
 
 @media (max-width: 767px) {
+  /*NAV BAR*/
+  nav {
+    background-color: #2d3047;
+    color: #fafdf6;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    padding-bottom: 2%;
+    
   
+  }
+
+  .nav-container {
+    display: flex;
+    /* align-items: center; */
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+  }
+
+  .nav-brand {
+    margin-right: auto;
+    margin-left: auto;
+    color: #8aea92;
+    font-size: 1.1rem;
+    border: solid 0.5px #8aea92;
+    background-color: #2d3047;
+    padding: 0 1px;
+    cursor: pointer;
+    /* transform: translate(-300px, 6px); */
+    position: relative;
+    right: 40%;
+    top: 20px;
+  }
+
+  #nav-menu {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    padding-left: 0;
+    display: flex;
+
+    /* margin:  2px auto; */
+  }
+
+  #toggler {
+    display: block;
+    filter: invert(100%);
+    width: 40px;
+    z-index: 3;
+    position: fixed;
+  }
+
+  .nav-link {
+    padding: 10px 100px;
+    font-size: 1rem;
+    margin-left: 10px;
+    margin-right: auto;
+  }
+
+  .humburger-icon {
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    cursor: pointer;
+  }
+
+  nav li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #nav-cta {
+    display: none;
+
+    
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 0;
+     align-self: flex-end;
+     position: relative;
+  }
+
+  .nav-container a {
+    color: #fafdf6;
+    text-decoration: none;
+  }
+
+  .nav-container a:hover {
+    background-image: linear-gradient(to right, #8aea92, #2d3047);
+  }
+
+  #cedi {
+    color: #f5ee9e;
+    padding: 0;
+  }
+
+  #cedi-sign {
+    height: 24px;
+    color: #f5ee9e;
+
+    filter: grayscale(50%);
+  }
+
+  .wrapper {
+    position: static;
+    height: -10px;
+    margin-left: 2%;
+
+    transform: translate(-10%, -10%);
+  }
+
+  .searchbox {
+    position: relative;
+  }
+
+  .searchbox .input {
+    width: 0px;
+    border: 0px;
+    height: 30px;
+    padding: 0px 35px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px 1px #b6bbc0;
+    outline: none;
+    color: #42be11;
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s linear;
+  }
+
+  .searchbtn {
+    position: absolute;
+    top: 1px;
+    right: -1px;
+    background: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s 0.6s linear;
+  }
+
+  .searchbtn .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #42be11;
+    font-size: 22px;
+    transition: all 0.5s 0.6s linear;
+  }
+
+  /*jquery class*/
+  .searchbtn.bg-green {
+    background: #42be11;
+    transition: all 0.2s linear;
+  }
+
+  .searchbtn .fas.color-white {
+    color: #fff;
+    transition: all 0.2s linear;
+  }
+
+  .searchbox .input.active-width {
+    width: 110px;
+  }
+
+  #log-in,
+  #sign-up {
+    margin-right: 10px;
+    width: 90%;
+    background-color: transparent;
+    color: white;
+    height: 40px;
+    border-color: #8aea92;
+    font-weight: bold;
+    font-size: 0.6rem;
+  }
+
+  #sign-up {
+    background-color: #f5ee9e;
+    width: 110%;
+    border-style: none;
+    color: #2d3047;
+  }
+
+  #log-in:hover,
+  #sign-up:hover {
+    background-color: #96ee9dba;
+    cursor: pointer;
+  }
+
+  /*TITLE*/
+  .featured-container {
+    margin-top: 0;
+  }
+
+  #featured-image {
+    /* margin-top: 90px; */
+    position: relative;
+    width: 120%;
+  }
+
+  #momo-img {
+    width: 120px;
+    margin-top: 20px;
+  }
+
+  #crypto-img {
+    width: 80px;
+    position: absolute;
+    top: 400px;
+    left: 450px;
+  }
+
+  #featured-message {
+    width: 49%;
+    position: absolute;
+    top: 15%;
+    z-index: 0;
+    font-size: 2rem;
+    margin-top: 4%;
+    margin-left: 2%;
+    padding: 2%;
+    text-align: left;
+    border: solid rgba(45, 48, 71, 0.08) 5px;
+  /* display: none; */
+    
+  }
+
+  .large-title {
+    font-weight: bold;
+    color: #50cb5af3;
+    text-shadow: 1px 1px #2d3047;
+    font-size: 1.4rem;
+  }
+
+  #momo-title {
+    color: #f7e40a;
+  }
+
+  .small-title {
+    margin: 0;
+    color: #2d3047;
+    font-size: 1rem;
+  }
+
+  .trade-btn {
+    position: absolute;
+    top: 450px;
+    margin-left: 5%;
+    width: 100px;
+    height: 40px;
+    background-color: #8aea92;
+    color: #2d3047;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 10px;
+    border-style: none;
+    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.09),
+      0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  .trade-btn:hover {
+    background-color: #2d3047;
+    color: white;
+    cursor: pointer;
+  }
+
+  /*FEATURES SECTION*/
+
+  #features {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .features-container {
+    display: flex;
+
+    justify-content: center;
+    flex-direction: column;
+    margin: 2% 10%;
+    padding: 0 5%;
+  }
+
+  .feature-icon {
+    transform: scale(0.7);
+  }
+
+  .feature-item {
+    margin: 5% 5%;
+  }
+
+  /*PRICES SECTION*/
+  #pricing {
+    background-color: #2d3047;
+    text-align: center;
+    color: #fff;
+    padding-top: 3%;
+    margin: 5% auto;
+  }
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+    flex-wrap: wrap;
+  }
+
+  .coin {
+    text-align: center;
+    padding: 2%;
+    font-size: 1.5rem;
+    border: solid 1px rgb(24, 26, 39);
+    border-radius: 15px;
+    background-color: #383c5d;
+
+    margin: auto 1%;
+  }
+
+  #dogecoin,
+  #usdt,
+  #ethereum,
+  #bitcoin {
+    flex: 0 0 60%;
+    margin-top: 2%;
+  }
+
+  .coin:hover {
+    background-color: #585d8a;
+  }
+
+  .coin-icon {
+    height: 200px;
+  }
+
+  #pricing .trade-btn {
+    position: static;
+    margin: auto;
+    font-size: 1rem;
+    width: 90%;
+  }
+
+  #pricing span {
+    margin-left: 10px;
+  }
+
+  .section-titles {
+    font-size: 1.2rem;
+  }
+
+  #pricing h5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+
+  /*TESTIMONIALS*/
+
+  #testimonials {
+    text-align: center;
+    margin: 10% 5%;
+  }
+
+  .testimonial-container {
+    display: flex;
+    margin: 2% 1%;
+    flex-wrap: wrap;
+  }
+
+  #testimonials h6 {
+    font-size: 1rem;
+    margin: 5px;
+  }
+
+  #testimonials p {
+    margin: 4%;
+    line-height: 1.3;
+  }
+
+  .testimonial-item {
+    width: 100%;
+    margin: 1%;
+    background-color: rgba(248, 241, 211, 0.5);
+    padding: 4%;
+  }
+
+  .fa-star,
+  .fa-star-half {
+    color: #ffbb00e4;
+    margin-bottom: 10%;
+  }
+
+  /* NEWS SECTION */
+  table,
+  td {
+    padding: 0 20px;
+  }
+
+  #news {
+    text-align: left;
+    width: 70%;
+    margin: 5% auto;
+  }
+
+  #news a {
+    color: slateblue;
+  }
+
+  #stats {
+    background-color: #8aea92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    height: 200px;
+    margin-left: auto;
+  }
+
+  /*FOOTER SECTION*/
+  footer {
+    background-color: #2d3047;
+    height: max-content;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1%;
+    padding-top: 4%;
+   
+  }
+
+  footer table {
+    margin-bottom: 2%;
+  }
+
+  footer table td,
+  footer table th {
+    padding: 5px 2px;
+    text-align: left;
+  }
+
+  .footer-sec {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+  }
+
+  footer .fa-brands {
+    margin: 5px 30px;
+  }
+
+  .footer-links {
+    text-decoration: none;
+    color: #fff;
+  }
+  .footer-links:hover {
+    color: #8aea92;
+  }
 }
