@@ -6,36 +6,77 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login - Cedii</title>
 <link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="css/login.csss">
 </head>
 
 <body>
+
+        
+        
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script
+        src="https://kit.fontawesome.com/c6f9e892e6.js"
+        crossorigin="anonymous"
+      ></script>
     <div class="login-background">
 
     
-      
-        <nav class="nav-container">
-            <h1 class="nav-brand"><span id="cedi"><img id="cedi-sign" src="images/My project small.png" </span>EDII</h1>
-          
-            <ul class="nav-menu"type="none">
-              <li><a  class="nav-link" href="index.html">Home</a></li>
-              <li><a  class="nav-link" href="buy.html">Buy</a></li>
-              <li><a  class="nav-link" href="">Sell</a></li>
-              <li><a  class="nav-link" href="/index.html#pricing">Prices</a></li>
-              <li><a  class="nav-link" href="support.html">Support</a></li>
-              <li><a  class="nav-link" href="">About Us</a></li>
-              <li><a  class="nav-link" href="">FAQ</a></li>
-            </ul>
-         
-          <div class="nav-cta">
-            <form action="sign-up.html">
-            <input type="submit" class="registration" id="sign-up" value="SIGN UP">
-          </form>
+  
 
-         
+    <nav class="nav-container" id="navbar">
+        <h1 class="nav-brand">
+            <a href="index.html" id="nav-brand-link"><span id="cedi"
+              ><img id="cedi-sign" src="images/My project small.png" /></span
+            >EDII
+          </a></h1>
+
+      <ul id="nav-menu" type="none">
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="buy.html">Trade</a></li>
+
+        <li><a class="nav-link" href="#pricing">Prices</a></li>
+        <li><a class="nav-link" href="support.html">Support</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="about.html">FAQ</a></li>
+      </ul>
+
+      <div class="wrapper">
+        <div class="searchbox">
+          <input type="text" class="input" />
+
+          <div class="searchbtn">
+            <i class="fas fa-search"></i>
           </div>
-        </nav>
+        </div>
+      </div>
 
+      <div id="nav-cta">
+        <!-- <form action="login.html">
+          <input
+            type="submit"
+            value="LOGIN"
+            class="registration"
+            id="log-in"
+          />
+        </form> -->
+
+        <form action="sign-up.html">
+          <input
+            type="submit"
+            class="registration"
+            id="sign-up"
+            value="SIGN UP"
+          />
+        </form>
+      </div>
+    </nav>
+
+    <img
+      id="toggler"
+      class="humburger-icon"
+      src="images/hamburger.png"
+      alt="icon"
+    />
 
      <!--LOGIN-->
      
@@ -99,6 +140,11 @@
 
     <p class="copyright-login">©cedii 2023. Terms and conditions apply.</p> 
 </div>
+
+
+
+<script src="app.js"></script>
+
 </body>
 
 

@@ -23,6 +23,26 @@ h4 {
 
 @media (min-width: 1494px) {
   /*NAV BAR*/
+#video-title {
+  text-align: center;
+  margin: 0 0 5%;
+  font-size: 2rem;
+}
+  #youtube-video {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    
+    
+  }
+#tutorial {
+  
+  margin-right: auto;
+  background-color:#95a39b;
+  padding: 5%;
+  margin-top: -10px;
+}
+
   nav {
     background-color: #2d3047;
     color: #fafdf6;
@@ -37,6 +57,18 @@ h4 {
     display: flex;
     align-items: center;
   }
+
+  #nav-brand-link {
+    color: #8aea92;
+    /* font-size: 1.8rem; */
+    
+    background-color: #2d3047;
+  }
+
+  #nav-brand-link:hover {
+    background-image: none;
+  }
+
 
   .nav-brand {
     margin-right: auto;
@@ -414,7 +446,7 @@ h4 {
   /*LOGIN PAGE*/
 
   .login-background {
-    background-color: #2d3047;
+    background-color: #444a72;
     height: 100vhmax;
     padding-top: 200px;
   }
@@ -451,13 +483,18 @@ h4 {
   }
 
   .login-box {
-    background-color: #4f5373;
+    background-color: #72779e;
     width: 70%;
     height: 80%;
     padding-top: 5% auto;
     border-radius: 25px;
     text-align: center;
     color: white;
+
+    box-shadow: 3px 3px 15px rgba(137, 130, 183, 0.719), 4px 4px 20px rgb(42, 34, 57);
+
+    padding-bottom: 2%;
+
   }
 
   #password-div {
@@ -500,7 +537,7 @@ h4 {
     color: #8aea92;
   }
 
-  .copyright {
+  .copyright-login {
     text-align: center;
     padding-bottom: 4%;
     margin-bottom: 0;
@@ -796,7 +833,7 @@ h4 {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 300px;
+    top: 25%;
     left: 80px;
   }
 
@@ -894,6 +931,30 @@ h4 {
 
 @media (min-width: 1114px) and (max-width: 1493px) {
   /*NAV BAR*/
+  #video-title {
+    text-align: center;
+    margin: 0 0 5%;
+    font-size: 1.2rem;
+  }
+    #youtube-video {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+     width: 1000px;
+      height: 500px;
+      
+      
+    }
+  #tutorial {
+    
+    margin-right: auto;
+    background-color:#95a39b;
+    padding: 5%;
+    margin-top: -10px;
+  }
+
+
+
   nav {
     background-color: #2d3047;
     color: #fafdf6;
@@ -919,6 +980,17 @@ h4 {
     background-color: #2d3047;
     padding: 0 2px;
     cursor: pointer;
+  }
+
+  #nav-brand-link {
+    color: #8aea92;
+    /* font-size: 1.8rem; */
+    
+    background-color: #2d3047;
+  }
+
+  #nav-brand-link:hover {
+    background-image: none;
   }
 
   #nav-menu {
@@ -1289,415 +1361,542 @@ h4 {
   .footer-links:hover {
     color: #8aea92;
   }
-}
 
-@media (max-width: 1148px) {
-  /*NAV BAR*/
-  nav {
-    background-color: #2d3047;
-    color: #fafdf6;
-    position: fixed;
-    right: 0;
-    left: 0;
-    top: 0;
-    z-index: 1;
+
+/*BUY*/
+  /*BUY*/
+  /*BUY*/
+
+  .trade-parent-container tr:nth-child(even) {
+    background-color: #f9faed;
   }
 
-  .nav-container {
-    display: flex;
-    align-items: center;
+  .trade-parent-container tr:nth-child(odd) {
+    background-color: #d4f191;
   }
 
-  .nav-brand {
-    margin-right: auto;
-    margin-left: 1%;
-    color: #8aea92;
-    font-size: 1.3rem;
-    border: solid 0.5px #8aea92;
-    background-color: #2d3047;
-    padding: 0 2px;
-    cursor: pointer;
-  }
-
-  #nav-menu {
-    display: flex;
-    flex-direction: row;
+  #exchange-title {
     text-align: center;
-    gap: 0.22rem;
+    position: relative;
+    top: 150px;
+    background-color: #8aea92;
+    padding: 20px;
   }
 
-  .nav-link {
-    padding: 10px;
-    font-size: 0.9rem;
-  }
-
-  #nav-cta {
-    display: flex;
-    flex-direction: row;
+  .trade-parent-container {
+    background-color: rgb(45, 48, 71, 0.1);
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-
-
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
   }
 
-  .nav-container a {
-    color: #fafdf6;
-    text-decoration: none;
-  }
-
-  .nav-container a:hover {
-    background-image: linear-gradient(to right, #8aea92, #2d3047);
-  }
-
-  #cedi {
-    color: #f5ee9e;
-    padding: 0;
-  }
-
-  #cedi-sign {
-    height: 24px;
-    color: #f5ee9e;
-
-    filter: grayscale(50%);
-  }
-
-  .wrapper {
-    position: static;
-    height: 50px;
-    margin-left: 2%;
-
-    transform: translate(-10%, -10%);
-  }
-
-  .searchbox {
-    position: relative;
-  }
-
-  .searchbox .input {
-    width: 0px;
-    border: 0px;
-    height: 40px;
-    padding: 0px 35px;
-    border-radius: 50px;
-    box-shadow: 0 0 10px 1px #b6bbc0;
-    outline: none;
-    color: #42be11;
-    font-weight: bold;
-    font-size: 20px;
-    transition: all 0.5s linear;
-  }
-
-  .searchbtn {
-    position: absolute;
-    top: 0;
-    right: -1px;
-    background: #fff;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.5s 0.6s linear;
-  }
-
-  .searchbtn .fas {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #42be11;
-    font-size: 22px;
-    transition: all 0.5s 0.6s linear;
-  }
-
-  /* jquery class */
-  .searchbtn.bg-green {
-    background: #42be11;
-    transition: all 0.2s linear;
-  }
-
-  .searchbtn .fas.color-white {
-    color: #fff;
-    transition: all 0.2s linear;
-  }
-
-  .searchbox .input.active-width {
-    width: 100px;
-  }
-
-  #log-in,
-  #sign-up {
-    margin-right: 10px;
-    width: 80%;
-    background-color: transparent;
-    color: white;
-    height: 40px;
-    border-color: #8aea92;
-    font-weight: bold;
-    font-size: 0.5rem;
-  }
-
-  #sign-up {
-    background-color: #f5ee9e;
-    width: 80%;
-    border-style: none;
-    color: #2d3047;
-  }
-
-  #log-in:hover,
-  #sign-up:hover {
-    background-color: #96ee9dba;
-    cursor: pointer;
-  }
-
-  /*TITLE*/
-  .featured-container {
-    margin-top: 0;
-  }
-
-  #featured-image {
-    position: relative;
+  .trade-container {
     width: 100%;
   }
 
-  #momo-img {
-    width: 120px;
-    margin-top: 20px;
+  .trade-option {
+    display: flex;
   }
 
-  #crypto-img {
-    width: 80px;
-    position: absolute;
-    top: 400px;
-    left: 450px;
+  #buy-option {
+    width: 50%;
   }
 
-  #featured-message {
-    width: 42%;
-    position: absolute;
-    top: 100px;
-    z-index: 0;
-    font-size: 2rem;
-    margin-top: 4%;
-    margin-left: 5%;
-    padding: 2%;
-    text-align: left;
-    border: solid rgba(45, 48, 71, 0.08) 10px;
-  }
-
-  .large-title {
-    font-weight: bold;
-    color: #50cb5af3;
-    text-shadow: 2px 2px #2d3047;
-    font-size: 1.7rem;
-  }
-
-  #momo-title {
-    color: #f7e40a;
-  }
-
-  .small-title {
-    margin: 0;
-    color: #2d3047;
-    font-size: 1.3rem;
-  }
-
-  .trade-btn {
-    position: absolute;
-    top: 500px;
-    margin-left: 5%;
-    width: 150px;
+  #buy-option-btn {
+    width: 100%;
     height: 50px;
-    background-color: #8aea92;
-    color: #2d3047;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 15px;
-    border-style: none;
-    box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.09),
-      0 5px 5px 0 rgba(0, 0, 0, 0.1);
-  }
-
-  .trade-btn:hover {
-    background-color: #2d3047;
-    color: white;
-    cursor: pointer;
-  }
-
-  /*FEATURES SECTION*/
-
-  #features {
-    text-align: center;
-    margin-top: 8%;
-  }
-
-  .features-container {
-    display: flex;
-
-    justify-content: center;
-    margin: 2% 10%;
-    padding: 0 5%;
-  }
-
-  .feature-item {
-    margin: auto 5%;
-  }
-
-  /*PRICES SECTION*/
-  #pricing {
-    background-color: #2d3047;
-    text-align: center;
-    color: #fff;
-    padding-top: 3%;
-    margin: 5% auto;
-  }
-  .pricing-container {
-    display: flex;
-    justify-content: center;
-    padding: 5%;
-  }
-
-  .coin {
-    text-align: center;
-    padding: 2%;
-    font-size: 1.5rem;
-    border: solid 1px rgb(24, 26, 39);
-    border-radius: 15px;
-    background-color: #383c5d;
-
-    margin: auto 1%;
-  }
-
-  .coin:hover {
-    background-color: #585d8a;
-  }
-
-  .coin-icon {
-    height: 150px;
-  }
-
-  #pricing .trade-btn {
-    position: static;
-    margin: auto;
-    font-size: 1rem;
-    width: 90%;
-  }
-
-  #pricing span {
-    margin-left: 0;
-  }
-
-  .section-titles {
+    background-image: linear-gradient(to top, #2d3047, #7d81a2);
+    color: #ffffff;
     font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
   }
 
-  #pricing h5 {
+  #sell-option {
+    width: 50%;
+  }
+
+  #sell-option-btn {
+    width: 100%;
+    height: 50px;
+  }
+
+  /* Table Styling */
+
+  .trade-container select {
+    width: 50%;
+    height: 1.5rem;
+  }
+
+  .trade-inputs {
+    width: 10rem;
+    height: 1.5rem;
+  }
+
+  .trade-container table {
+    width: 100%;
+    padding: 2px;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .trade-container td {
+    width: 15%;
+    padding: 10px;
+  }
+
+  #table-label {
+    width: 40%;
+  }
+
+  #radio-inputs {
+    margin-left: 0px;
+    width: 10px;
+    transform: scale(3);
+  }
+
+  .amounts {
+    width: 100%;
+  }
+
+  .wallet-inputs {
+    width: 100%;
+  }
+
+  #momo-wallet {
+    width: 50%;
+  }
+
+  #buy-btn {
+    width: 50%;
+    height: 2.5rem;
+    margin-left: 25%;
+    margin-right: auto;
+    background-image: linear-gradient(to top, rgb(38, 195, 88), #8aea92);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(120, 149, 135);
+  }
+
+  .momo-networks {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .caution {
+    text-align: center;
+    background-color: #f7afaf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .caution-item {
+    margin-bottom: 10px;
+  }
+
+
+
+
+    /*ABOUT PAGE*/
+  /*ABOUT PAGE*/
+  /*ABOUT PAGE*/
+
+  #about-us-banner {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .main-container {
+    margin-top: -10px;
+  }
+
+  .about-titles {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  #logo-container {
+    /* position:absolute;
+  top: 600px; */
+    display: flex;
+    align-content: center;
+    left: 90px;
+  }
+
+  #cedii-logo-sign {
+    height: 140px;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  #cedii-logo {
+    color: #8aea92;
+    font-size: 140px;
+    /* margin: 20px; */
+    display: inline-block;
+    align-self: center;
+  }
+
+  #logo-parent-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    font-size: 1.1rem;
+    position: absolute;
+    top: 25%;
+    left: 80px;
   }
 
-  /*TESTIMONIALS*/
-
-  #testimonials {
-    text-align: center;
-    margin: 10% 5%;
-  }
-
-  .testimonial-container {
+  #cover-feature-container {
     display: flex;
-    margin: 2% 1%;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
   }
 
-  #testimonials h6 {
-    font-size: 1rem;
-    margin: 5px;
+  .cover-features {
+    color: white;
+    margin: 0;
+    font-size: 1.5rem;
   }
 
-  #testimonials p {
-    margin: 4%;
-    line-height: 1.3;
+  #about-company,
+  #faq,
+  #terms {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
   }
 
-  .testimonial-item {
-    width: 100%;
-    margin: 1%;
-    background-color: rgba(248, 241, 211, 0.5);
-    padding: 4%;
+  #faq {
+    margin-top: 10%;
   }
 
-  .fa-star,
-  .fa-star-half {
-    color: #ffbb00e4;
+  #faq-section {
+    background-color: rgba(246, 241, 249, 0.638);
     margin-bottom: 10%;
   }
 
-  /* NEWS SECTION */
-  table,
-  td {
-    padding: 0 20px;
+  .copyright {
+    margin-top: 10%;
+    text-align: center;
   }
 
-  #news {
-    text-align: center;
-    width: 70%;
+  /*SUPPORT*/
+  /*SUPPORT*/
+  /*SUPPORT*/
+
+  .support-text-box {
+    width: 150%;
+    height: 30px;
+    margin-bottom: 5%;
+  }
+
+  #message-box {
+    height: 200px;
+    width: 150%;
+  }
+
+  .main-support {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
     margin: 5% auto;
   }
 
-  #news a {
-    color: slateblue;
+  .top-container {
+    display: flex;
+    gap: 20rem;
+    margin: 5% auto;
   }
 
-  #stats {
-    background-color: #8aea92;
+  .bottom-container {
     display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .find-us {
+    margin: 10% 0;
+    width: 100%;
+  }
+
+  .find-us .fa-brands:hover {
+    color: #444444;
+  }
+
+  .find-us .fa-brands {
+    margin: 8% 5%;
+  }
+
+  .support-copyright {
+    text-align: center;
+  }
+
+
+
+  /*LOGIN*/
+
+
+
+  .login-background {
+    /* background-color: #2d3047; */
+    background-color: #444a72;
+    height: 100vhmax;
+    padding-top: 200px;
+  }
+
+  .login-image {
+    width: 500px;
+    margin-left: 10%;
+    margin-right: auto;
+  }
+
+  .form-container {
+    display: flex;
+    margin: auto 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .greeting-box {
+    width: 50%;
+    
+  }
+
+  .title-message {
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 100px;
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  #text-highlight {
+    color: #f5ee9e;
+  }
+
+  .login-container {
+    display: flex;
+    width: 50%;
     justify-content: center;
     align-items: center;
-    gap: 10rem;
-    height: 200px;
+    
   }
 
-  /*FOOTER SECTION*/
-  footer {
-    background-color: #2d3047;
-    height: max-content;
-    color: #fff;
+  .login-box {
+    background-color: #6a6f8f;
+    width: 70%;
+    height: 80%;
+    padding-top: 5% auto;
+    border-radius: 25px;
     text-align: center;
-    padding-bottom: 1%;
-    padding-top: 4%;
+    color: white;
+
+    box-shadow: 3px 3px 15px rgba(121, 112, 178, 0.719), 4px 4px 20px rgb(42, 34, 57);
+
+    padding-bottom: 5%;
+
   }
 
-  footer table {
-    margin-bottom: 1%;
+  #password-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
 
-  footer table td,
-  footer table th {
-    padding: 15px 60px;
-    text-align: center;
+  #email-div {
+    margin: auto;
   }
 
-  .footer-sec {
-    text-align: center;
-    display: flex;
-    justify-content: center;
+  #login-title {
+    margin: 50px auto;
   }
 
-  footer .fa-brands {
-    margin: auto 20px;
+  .input-box {
+    width: 80%;
+    height: 2rem;
   }
 
-  .footer-links {
-    text-decoration: none;
-    color: #fff;
+  .social-icon {
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
-  .footer-links:hover {
+  #apple-icon {
+    width: 50px;
+  }
+
+  #login-btn {
+    background-color: #8aea92;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #login-btn:hover {
+    background-color: #3c9043;
+  }
+
+  .action-link {
     color: #8aea92;
   }
+
+  .copyright-login {
+    text-align: center;
+    padding-bottom: 4%;
+    margin-bottom: 0;
+    margin-top: 5%;
+    color: aliceblue;
+  }
+
+  /*SIGN UP*/
+  /*SIGN UP*/
+  /*SIGN UP*/
+
+  .sign-up-container {
+    margin-top: 100px;
+    margin-left: 1000px;
+    /* margin-right: auto; */
+    border: solid 2px rgb(126, 230, 133);
+    background-color: rgba(67, 50, 92, 0.6);
+    width: 40%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 3% 0px;
+    position: absolute;
+  }
+
+  #sign-up-title {
+    color: #8aea92;
+    margin-bottom: 50px;
+  }
+
+  .main-container input {
+    width: 70%;
+    height: 2rem;
+    /* margin-bottom: 30px; */
+    border-radius: 10px;
+  }
+
+  .sign-up-container input {
+    margin-bottom: 30px;
+  }
+
+  #terms {
+    margin: 0px 2px 0 0;
+    /*padding-right: 0px; */
+    width: 30px;
+    height: 30px;
+    /* margin-top: 50px; */
+    /* margin-top: 1px; */
+  }
+
+  #terms-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 2px;
+  }
+
+  #login-instead {
+    color: #8aea92;
+  }
+
+  #login-instead a {
+    color: rgb(223, 191, 252);
+    text-decoration: none;
+  }
+
+  #apple-icon {
+    width: 50px;
+  }
+
+  #sign-up-btn {
+    background-color: #8aea92;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #sign-up-btn:hover {
+    background-color: #ddfae0;
+  }
+
+  #bg-image {
+    width: 100%;
+  }
+
+  .main-container {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  #welcome-message {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 2rem;
+    width: 40%;
+    color: #dffe96;
+  }
+
+  #welcome-only {
+    margin-bottom: 20px;
+    color: #dffe96;
+  }
+
+
+
 }
+
 
 @media (min-width: 768px) and (max-width: 1147px) {
   /*NAV BAR*/
+
+  #video-title {
+    text-align: center;
+    margin: 0 0 5%;
+    font-size: 1.4rem;
+  }
+    #youtube-video {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      
+      height: 450px;
+      width: 700px;
+      
+      
+    }
+  #tutorial {
+    
+    margin-right: auto;
+    background-color:#95a39b;
+    padding: 5%;
+    margin-top: -10px;
+  }
+
+
+
   nav {
     background-color: #2d3047;
     color: #fafdf6;
@@ -1724,6 +1923,17 @@ h4 {
     background-color: #2d3047;
     padding: 0 1px;
     cursor: pointer;
+  }
+
+  #nav-brand-link {
+    color: #8aea92;
+    /* font-size: 1.8rem; */
+    
+    background-color: #2d3047;
+  }
+
+  #nav-brand-link:hover {
+    background-image: none;
   }
 
   #nav-menu {
@@ -2134,10 +2344,459 @@ h4 {
   .footer-links:hover {
     color: #8aea92;
   }
+
+
+/*BUY*/
+  /*BUY*/
+  /*BUY*/
+
+  .trade-parent-container tr:nth-child(even) {
+    background-color: #f9faed;
+  }
+
+  .trade-parent-container tr:nth-child(odd) {
+    background-color: #d4f191;
+  }
+
+  #exchange-title {
+    text-align: center;
+    position: relative;
+    top: 150px;
+    background-color: #8aea92;
+    padding: 20px;
+  }
+
+  .trade-parent-container {
+    background-color: rgb(45, 48, 71, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  .trade-container {
+    width: 100%;
+  }
+
+  .trade-option {
+    display: flex;
+  }
+
+  #buy-option {
+    width: 50%;
+  }
+
+  #buy-option-btn {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #2d3047, #7d81a2);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+  }
+
+  #sell-option {
+    width: 50%;
+  }
+
+  #sell-option-btn {
+    width: 100%;
+    height: 50px;
+  }
+
+  /* Table Styling */
+
+  .trade-container select {
+    width: 50%;
+    height: 1.5rem;
+  }
+
+  .trade-inputs {
+    width: 10rem;
+    height: 1.5rem;
+  }
+
+  .trade-container table {
+    width: 100%;
+    padding: 2px;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .trade-container td {
+    width: 15%;
+    padding: 10px;
+  }
+
+  #table-label {
+    width: 40%;
+  }
+
+  #radio-inputs {
+    margin-left: 0px;
+    width: 10px;
+    transform: scale(3);
+  }
+
+  .amounts {
+    width: 100%;
+  }
+
+  .wallet-inputs {
+    width: 100%;
+  }
+
+  #momo-wallet {
+    width: 50%;
+  }
+
+  #buy-btn {
+    width: 50%;
+    height: 2.5rem;
+    margin-left: 25%;
+    margin-right: auto;
+    background-image: linear-gradient(to top, rgb(38, 195, 88), #8aea92);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(120, 149, 135);
+  }
+
+  .momo-networks {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .caution {
+    text-align: center;
+    background-color: #f7afaf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .caution-item {
+    margin-bottom: 10px;
+  }
+
+
+
+
+
+    /*ABOUT PAGE*/
+  /*ABOUT PAGE*/
+  /*ABOUT PAGE*/
+
+  #about-us-banner {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .main-container {
+    margin-top: -10px;
+  }
+
+  .about-titles {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  #logo-container {
+    /* position:absolute;
+  top: 600px; */
+    display: flex;
+    align-content: center;
+    left: 90px;
+  }
+
+  #cedii-logo-sign {
+    height: 70px;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  #cedii-logo {
+    color: #8aea92;
+    font-size: 70px;
+    /* margin: 20px; */
+    display: inline-block;
+    align-self: center;
+  }
+
+  #logo-parent-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 80px;
+  }
+
+  #cover-feature-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+  }
+
+  .cover-features {
+    color: white;
+    margin: 0;
+    font-size: 0.7rem;
+  }
+
+  #about-company,
+  #faq,
+  #terms {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+  }
+
+  #faq {
+    margin-top: 10%;
+  }
+
+  #faq-section {
+    background-color: rgba(246, 241, 249, 0.638);
+    margin-bottom: 10%;
+  }
+
+  .copyright {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  /*SUPPORT*/
+  /*SUPPORT*/
+  /*SUPPORT*/
+
+  .support-text-box {
+    width: 150%;
+    height: 30px;
+    margin-bottom: 5%;
+  }
+
+  #message-box {
+    height: 200px;
+    width: 150%;
+  }
+
+  .main-support {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    margin: 5% auto;
+  }
+
+  .top-container {
+    display: flex;
+    gap: 30%;
+    margin: 5% auto;
+    width: 90%;
+    
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    margin: 5% auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .find-us {
+    margin: 10% 0;
+    width: 100%;
+  }
+
+  .find-us .fa-brands:hover {
+    color: #444444;
+  }
+
+  .find-us .fa-brands {
+    margin: 8% 5%;
+  }
+
+  .support-copyright {
+    text-align: center;
+  }
+
+
+
+
+
+  /*LOGIN*/
+
+  .login-background {
+    background-color: #444a72;
+    height: 100vhmax;
+    padding-top: 150px;
+    
+  }
+
+  .login-image {
+    width: 400px;
+    margin-left: 20%;
+    margin-right: auto;
+    display: inline;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    width: 80%;
+    justify-content: center;
+    margin-bottom: 20%;
+    
+  }
+
+
+  .greeting-box {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-message {
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #text-highlight {
+    color: #f5ee9e;
+  }
+
+  .login-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2%; */
+    /* padding-bottom: 5%; */
+    
+    
+  }
+
+  .login-box {
+    background-color: #62678a;
+    width: 75%;
+    height: 80%;
+    padding-top: 5%;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 15px rgba(121, 112, 178, 0.719), 4px 4px 20px rgb(42, 34, 57);
+
+    padding-bottom: 5%;
+
+
+  }
+
+  #password-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #email-div {
+    margin: auto;
+  }
+
+  #login-title {
+    margin: 50px auto;
+  }
+
+  .input-box {
+    width: 80%;
+    height: 2rem;
+  }
+
+  .social-icon {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #apple-icon {
+    width: 50px;
+  }
+
+  #login-btn {
+    background-color: #8aea92;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #login-btn:hover {
+    background-color: #3c9043;
+  }
+
+  .action-link {
+    color: #8aea92;
+  
+  }
+
+  .copyright-login {
+    text-align: center;
+    padding-bottom: 4%;
+    margin-bottom: 0;
+    margin-top: 5%;
+    color: aliceblue;
+    
+  }
+
+
+
+
+
+
 }
 
 @media (max-width: 767px) {
   /*NAV BAR*/
+
+  #video-title {
+    text-align: center;
+    margin: 0 0 5%;
+    font-size: 1.2rem;
+  }
+    #youtube-video {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+     width: 500px;
+      height: 300px;
+      
+      
+    }
+  #tutorial {
+    
+    margin-right: auto;
+    background-color:#95a39b;
+    padding: 5%;
+    margin-top: -10px;
+  }
+
+
+
   nav {
     background-color: #2d3047;
     color: #fafdf6;
@@ -2173,6 +2832,17 @@ h4 {
     position: relative;
     right: 40%;
     top: 20px;
+  }
+
+  #nav-brand-link {
+    color: #8aea92;
+    /* font-size: 1.8rem; */
+    
+    background-color: #2d3047;
+  }
+
+  #nav-brand-link:hover {
+    background-image: none;
   }
 
   #nav-menu {
@@ -2600,4 +3270,534 @@ h4 {
   .footer-links:hover {
     color: #8aea92;
   }
+
+
+
+/*BUY*/
+  /*BUY*/
+  /*BUY*/
+
+  .trade-parent-container tr:nth-child(even) {
+    background-color: #f9faed;
+  }
+
+  .trade-parent-container tr:nth-child(odd) {
+    background-color: #d4f191;
+  }
+
+  #exchange-title {
+    text-align: center;
+    position: relative;
+    top: 150px;
+    background-color: #8aea92;
+    padding: 20px;
+  }
+
+  .trade-parent-container {
+    background-color: rgb(45, 48, 71, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  .trade-container {
+    width: 100%;
+  }
+
+  .trade-option {
+    display: flex;
+  }
+
+  #buy-option {
+    width: 50%;
+  }
+
+  #buy-option-btn {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #2d3047, #7d81a2);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+  }
+
+  #sell-option {
+    width: 50%;
+  }
+
+  #sell-option-btn {
+    width: 100%;
+    height: 50px;
+  }
+
+  /* Table Styling */
+
+  .trade-container select {
+    width: 50%;
+    height: 1.5rem;
+  }
+
+  .trade-inputs {
+    width: 10rem;
+    height: 1.5rem;
+  }
+
+  .trade-container table {
+    width: 100%;
+    padding: 2px;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .trade-container td {
+    width: 15%;
+    padding: 10px;
+  }
+
+  #table-label {
+    width: 40%;
+  }
+
+  #radio-inputs {
+    margin-left: 0px;
+    width: 10px;
+    transform: scale(3);
+  }
+
+  .amounts {
+    width: 100%;
+  }
+
+  .wallet-inputs {
+    width: 100%;
+  }
+
+  #momo-wallet {
+    width: 50%;
+  }
+
+  #buy-btn {
+    width: 50%;
+    height: 2.5rem;
+    margin-left: 25%;
+    margin-right: auto;
+    background-image: linear-gradient(to top, rgb(38, 195, 88), #8aea92);
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(120, 149, 135);
+  }
+
+  .momo-networks {
+    text-align: center;
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 150px;
+  }
+
+  .caution {
+    text-align: center;
+    background-color: #f7afaf;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .caution-item {
+    margin-bottom: 10px;
+  }
+
+
+
+
+    /*ABOUT PAGE*/
+  /*ABOUT PAGE*/
+  /*ABOUT PAGE*/
+
+  #about-us-banner {
+    width: 100%;
+    margin: 50px auto;
+  }
+
+  .main-container {
+    margin-top: -10px;
+  }
+
+  .about-titles {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  #logo-container {
+    /* position:absolute;
+  top: 600px; */
+    display: flex;
+    align-content: center;
+    left: 90px;
+    
+  }
+
+  #cedii-logo-sign {
+    height: 50px;
+    margin-bottom: 0;
+    align-self: center;
+  }
+
+  #cedii-logo {
+    color: #8aea92;
+    font-size: 50px;
+    /* margin: 20px; */
+    display: inline-block;
+    align-self: center;
+  }
+
+  #logo-parent-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 20%;
+    left: 80px;
+    
+  }
+
+  #cover-feature-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 0 auto;
+  }
+
+  .cover-features {
+    color: white;
+    margin: 0;
+    font-size: 0.5rem;
+  }
+
+  #about-company,
+  #faq,
+  #terms {
+    text-align: justify;
+    width: 80%;
+    margin: auto;
+  }
+
+  #faq {
+    margin-top: 10%;
+  }
+
+  #faq-section {
+    background-color: rgba(246, 241, 249, 0.638);
+    margin-bottom: 10%;
+  }
+
+  .copyright {
+    margin-top: 10%;
+    text-align: center;
+  }
+
+  /*SUPPORT*/
+  /*SUPPORT*/
+  /*SUPPORT*/
+
+  .support-text-box {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 5%;
+  }
+
+  #message-box {
+    height: 200px;
+    width: 100%;
+  }
+
+  .main-support {
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+    margin: 5% auto;
+  }
+
+  .top-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 20%;
+    width: 80%;
+  
+  }
+
+  .bottom-container {
+    display: flex;
+    flex-direction: column;
+    margin: 8% auto;
+    width: 80%;
+    text-align: justify;
+  }
+
+  .find-us {
+    margin: 10% 0;
+    width: 100%;
+  }
+
+  .find-us .fa-brands:hover {
+    color: #444444;
+  }
+
+  .find-us .fa-brands {
+    margin: 8% 5%;
+  }
+
+  .support-copyright {
+    text-align: center;
+  }
+
+
+/*LOGIN*/
+/*LOGIN*/
+/*LOGIN*/
+
+
+  .login-background {
+    background-color: #4d547e;
+    height: 100vhmax;
+    padding-top: 200px;
+    
+  }
+
+  .login-image {
+    width: 400px;
+    margin-left: 20%;
+    margin-right: auto;
+    display: none;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    width: 80%;
+    justify-content: center;
+    margin-bottom: 20%;
+    
+  }
+
+
+  .greeting-box {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .title-message {
+    margin-top: 20px;
+    color: white;
+    margin-bottom: 100px;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  #text-highlight {
+    color: #f5ee9e;
+  }
+
+  .login-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 2%; */
+    /* padding-bottom: 5%; */
+    
+    
+  }
+
+  .login-box {
+    background-color: #62678a;
+    width: 90%;
+    height: 80%;
+    padding-top: 5%;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    box-shadow: 3px 3px 15px rgba(121, 112, 178, 0.719), 4px 4px 20px rgb(42, 34, 57);
+
+    padding-bottom: 5%;
+
+
+  }
+
+  #password-div {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #email-div {
+    margin: auto;
+  }
+
+  #login-title {
+    margin: 50px auto;
+  }
+
+  .input-box {
+    width: 80%;
+    height: 2rem;
+  }
+
+  .social-icon {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  #apple-icon {
+    width: 50px;
+  }
+
+  #login-btn {
+    background-color: #8aea92;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #login-btn:hover {
+    background-color: #3c9043;
+  }
+
+  .action-link {
+    color: #8aea92;
+  
+  }
+
+  .copyright-login {
+    text-align: center;
+    padding-bottom: 4%;
+    margin-bottom: 0;
+    margin-top: 5%;
+    color: aliceblue;
+    
+  }
+
+
+
+
+  /*SIGN UP*/
+  /*SIGN UP*/
+  /*SIGN UP*/
+
+  .sign-up-container {
+    margin-top: 100px;
+    margin-left: 1000px;
+    /* margin-right: auto; */
+    border: solid 2px rgb(126, 230, 133);
+    background-color: rgba(67, 50, 92, 0.6);
+    width: 40%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 3% 0px;
+    position: absolute;
+  }
+
+  #sign-up-title {
+    color: #8aea92;
+    margin-bottom: 50px;
+  }
+
+  .main-container input {
+    width: 70%;
+    height: 2rem;
+    /* margin-bottom: 30px; */
+    border-radius: 10px;
+  }
+
+  .sign-up-container input {
+    margin-bottom: 30px;
+  }
+
+  #terms {
+    margin: 0px 2px 0 0;
+    /*padding-right: 0px; */
+    width: 30px;
+    height: 30px;
+    /* margin-top: 50px; */
+    /* margin-top: 1px; */
+  }
+
+  #terms-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    gap: 2px;
+  }
+
+  #login-instead {
+    color: #8aea92;
+  }
+
+  #login-instead a {
+    color: rgb(223, 191, 252);
+    text-decoration: none;
+  }
+
+  #apple-icon {
+    width: 50px;
+  }
+
+  #sign-up-btn {
+    background-color: #8aea92;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+  #sign-up-btn:hover {
+    background-color: #ddfae0;
+  }
+
+  #bg-image {
+    width: 100%;
+  }
+
+  .main-container {
+    display: flex;
+    margin-top: 50px;
+  }
+
+  #welcome-message {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    font-size: 2rem;
+    width: 40%;
+    color: #dffe96;
+  }
+
+  #welcome-only {
+    margin-bottom: 20px;
+    color: #dffe96;
+  }
+
+
+
+
 }
+
+
+
+
+
