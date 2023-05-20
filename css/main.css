@@ -11,7 +11,7 @@ body {
   overflow-x: hidden;
   margin: 0;
   font-family: "Karla", sans-serif;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 h1,
@@ -23,25 +23,22 @@ h4 {
 
 @media (min-width: 1494px) {
   /*NAV BAR*/
-#video-title {
-  text-align: center;
-  margin: 0 0 5%;
-  font-size: 2rem;
-}
+  #video-title {
+    text-align: center;
+    margin: 0 0 5%;
+    font-size: 2rem;
+  }
   #youtube-video {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    
-    
   }
-#tutorial {
-  
-  margin-right: auto;
-  background-color:#95a39b;
-  padding: 5%;
-  margin-top: -10px;
-}
+  #tutorial {
+    margin-right: auto;
+    background-color: #95a39b;
+    padding: 5%;
+    margin-top: -10px;
+  }
 
   nav {
     background-color: #2d3047;
@@ -61,14 +58,13 @@ h4 {
   #nav-brand-link {
     color: #8aea92;
     /* font-size: 1.8rem; */
-    
+
     background-color: #2d3047;
   }
 
   #nav-brand-link:hover {
     background-image: none;
   }
-
 
   .nav-brand {
     margin-right: auto;
@@ -81,9 +77,9 @@ h4 {
     cursor: pointer;
   }
 
-#toggler {
-  display: none;
-}
+  #toggler {
+    display: none;
+  }
 
   #nav-menu {
     display: flex;
@@ -118,7 +114,6 @@ h4 {
 
   .wrapper {
     position: static;
-    /* height: 50px; */
     margin-left: 2%;
 
     transform: translate(-10%, -10%);
@@ -228,8 +223,9 @@ h4 {
   #crypto-img {
     width: 100px;
     position: absolute;
-    top: 700px;
-    left: 750px;
+    top: 450px;
+    left: 550px;
+    opacity: 30%;
   }
 
   #featured-message {
@@ -491,10 +487,10 @@ h4 {
     text-align: center;
     color: white;
 
-    box-shadow: 3px 3px 15px rgba(137, 130, 183, 0.719), 4px 4px 20px rgb(42, 34, 57);
+    box-shadow: 3px 3px 15px rgba(137, 130, 183, 0.719),
+      4px 4px 20px rgb(42, 34, 57);
 
     padding-bottom: 2%;
-
   }
 
   #password-div {
@@ -550,16 +546,34 @@ h4 {
   /*SIGN UP*/
 
   .sign-up-container {
-    margin-top: 100px;
-    margin-left: 1000px;
-    /* margin-right: auto; */
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
     border: solid 2px rgb(126, 230, 133);
     background-color: rgba(67, 50, 92, 0.6);
-    width: 40%;
+    width: 50%;
     text-align: center;
     border-radius: 20px;
     padding: 3% 0px;
     position: absolute;
+  }
+
+  .top-container-su {
+    display: flex;
+    margin-bottom: -4%;
+  }
+
+  .top-container-su label {
+    color: rgb(213, 243, 132);
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+  }
+  #name-box {
+    width: 50%;
+  }
+
+  #detail-box {
+    width: 50%;
   }
 
   #sign-up-title {
@@ -568,32 +582,39 @@ h4 {
   }
 
   .main-container input {
-    width: 70%;
+    width: 90%;
     height: 2rem;
-    /* margin-bottom: 30px; */
-    border-radius: 10px;
   }
 
   .sign-up-container input {
     margin-bottom: 30px;
   }
 
-  #terms {
-    margin: 0px 2px 0 0;
-    /*padding-right: 0px; */
-    width: 30px;
-    height: 30px;
-    /* margin-top: 50px; */
-    /* margin-top: 1px; */
+  #terms-word {
+    margin-left: -4%;
+    position: relative;
+    right: 25%;
+    margin-top: 3%;
+    color: rgb(213, 243, 132);
+    font-size: 1.5rem;
   }
 
+  #terms {
+    margin: 0px 2px 0 0;
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+  }
+
+  #page {
+    background-color: rgb(33, 25, 35);
+    height: 100%;
+  }
   #terms-div {
     display: flex;
-    align-items: center;
-    justify-content: center;
+
     margin-top: 30px;
     margin-bottom: 20px;
-    gap: 2px;
   }
 
   #login-instead {
@@ -613,6 +634,8 @@ h4 {
     background-color: #8aea92;
     font-weight: bold;
     cursor: pointer;
+    width: 50%;
+    height: 3rem;
   }
 
   #sign-up-btn:hover {
@@ -621,20 +644,24 @@ h4 {
 
   #bg-image {
     width: 100%;
+    opacity: 15%;
   }
 
   .main-container {
     display: flex;
     margin-top: 50px;
+    justify-content: center;
   }
 
   #welcome-message {
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    font-size: 2rem;
-    width: 40%;
+    position: relative;
+
+    top: 10%;
+    font-size: 1.5rem;
+    /* width: 40%; */
     color: #dffe96;
+    margin-left: auto;
+    text-align: center;
   }
 
   #welcome-only {
@@ -684,26 +711,35 @@ h4 {
   }
 
   #buy-option {
-    width: 50%;
+    width: 100%;
   }
 
   #buy-option-btn {
     width: 100%;
     height: 50px;
-    background-image: linear-gradient(to top, #2d3047, #7d81a2);
+    background-image: linear-gradient(to top, #87a23e, #6c9a4d);
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: bold;
     border: 1px rgba(45, 48, 71, 0.2) solid;
   }
+  #buy-option-btn:hover {
+    background-image: linear-gradient(to top, #b8cf7a, #98b783);
+
+    cursor: pointer;
+  }
 
   #sell-option {
-    width: 50%;
+    width: 40%;
   }
 
   #sell-option-btn {
     width: 100%;
     height: 50px;
+  }
+
+  #sell-option-btn:hover {
+    cursor: pointer;
   }
 
   /* Table Styling */
@@ -755,14 +791,20 @@ h4 {
 
   #buy-btn {
     width: 50%;
-    height: 2.5rem;
+    height: 4rem;
     margin-left: 25%;
     margin-right: auto;
-    background-image: linear-gradient(to top, rgb(38, 195, 88), #8aea92);
+    background-image: linear-gradient(to top, rgb(29, 159, 71), #8aea92);
     font-size: 1.2rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(120, 149, 135);
+  }
+
+  #buy-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: saturate(150%);
   }
 
   .momo-networks {
@@ -783,6 +825,134 @@ h4 {
 
   .caution-item {
     margin-bottom: 10px;
+  }
+
+  #trade-price-head {
+    text-align: center;
+    margin-bottom: 1%;
+  }
+
+  #trade-price-table {
+    width: 80%;
+
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 3%;
+  }
+
+  #trade-price-table td {
+    border: 2px green solid;
+    padding: 1%;
+  }
+
+  .price-heading {
+    background-color: #90f8a0;
+    font-weight: 800;
+  }
+
+  /*SELL*/
+  /*SELL*/
+  /*SELL*/
+
+  .trade-parent-container-sell tr:nth-child(even) {
+    background-color: #eaedcf;
+  }
+
+  .trade-parent-container-sell tr:nth-child(odd) {
+    background-color: #f1d391;
+  }
+
+  .trade-parent-container-sell {
+    background-color: rgb(45, 48, 71, 0.1);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  .trade-container-sell {
+    width: 100%;
+  }
+
+  #buy-option-sell {
+    width: 40%;
+  }
+
+  #buy-option-btn-sell {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  #sell-option-sell {
+    width: 100%;
+  }
+
+  #sell-option-btn-sell {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #d67d5d, #744c31);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+  }
+
+  #sell-option-btn-sell:hover {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #f78d67, #bc672e);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+    cursor: pointer;
+  }
+
+  /* Table Styling */
+
+  .trade-container-sell select {
+    width: 50%;
+    height: 1.5rem;
+  }
+
+  .trade-container-sell table {
+    width: 100%;
+    padding: 2px;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .trade-container-sell td {
+    width: 15%;
+    padding: 10px;
+  }
+
+  .wallet-box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -2%;
+  }
+
+  .copy-link {
+    margin-top: 2%;
+    margin-bottom: 7%;
+  }
+
+  .copy-link-input {
+    width: 500px;
+    height: 40px;
+    font: 2.5rem;
+    background-color: rgb(245, 177, 177);
   }
 
   /*ABOUT PAGE*/
@@ -808,8 +978,6 @@ h4 {
   }
 
   #logo-container {
-    /* position:absolute;
-  top: 600px; */
     display: flex;
     align-content: center;
     left: 90px;
@@ -936,24 +1104,19 @@ h4 {
     margin: 0 0 5%;
     font-size: 1.2rem;
   }
-    #youtube-video {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-     width: 1000px;
-      height: 500px;
-      
-      
-    }
-  #tutorial {
-    
+  #youtube-video {
+    margin-left: auto;
     margin-right: auto;
-    background-color:#95a39b;
+    display: block;
+    width: 1000px;
+    height: 500px;
+  }
+  #tutorial {
+    margin-right: auto;
+    background-color: #95a39b;
     padding: 5%;
     margin-top: -10px;
   }
-
-
 
   nav {
     background-color: #2d3047;
@@ -975,7 +1138,7 @@ h4 {
     margin-right: auto;
     margin-left: 1%;
     color: #8aea92;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     border: solid 0.5px #8aea92;
     background-color: #2d3047;
     padding: 0 2px;
@@ -983,9 +1146,8 @@ h4 {
   }
 
   #nav-brand-link {
-    color: #8aea92;
-    /* font-size: 1.8rem; */
-    
+    color: #f5ee9e;
+
     background-color: #2d3047;
   }
 
@@ -1017,8 +1179,6 @@ h4 {
     display: none;
   }
 
-
-
   .nav-container a {
     color: #fafdf6;
     text-decoration: none;
@@ -1034,7 +1194,7 @@ h4 {
   }
 
   #cedi-sign {
-    height: 27px;
+    height: 25px;
     color: #f5ee9e;
     filter: grayscale(50%);
   }
@@ -1145,8 +1305,9 @@ h4 {
   #crypto-img {
     width: 100px;
     position: absolute;
-    top: 550px;
-    left: 650px;
+    top: 350px;
+    left: 450px;
+    opacity: 25%;
   }
 
   #featured-message {
@@ -1155,7 +1316,7 @@ h4 {
     top: 100px;
     z-index: 0;
     font-size: 2rem;
-    margin-top: 5%;
+    margin-top: 1%;
     margin-left: 5%;
     padding: 2%;
     text-align: left;
@@ -1165,8 +1326,8 @@ h4 {
   .large-title {
     font-weight: bold;
     color: #50cb5af3;
-    text-shadow: 2px 2px #2d3047;
-    font-size: 1.8rem;
+    text-shadow: 1px 1px #2d3047;
+    font-size: 2.4rem;
   }
 
   #momo-title {
@@ -1176,12 +1337,12 @@ h4 {
   .small-title {
     margin: 0;
     color: #2d3047;
-    font-size: 1.3rem;
+    font-size: 1.6rem;
   }
 
   .trade-btn {
     position: absolute;
-    top: 600px;
+    top: 500px;
     margin-left: 5%;
     width: 200px;
     height: 60px;
@@ -1362,8 +1523,7 @@ h4 {
     color: #8aea92;
   }
 
-
-/*BUY*/
+  /*BUY*/
   /*BUY*/
   /*BUY*/
 
@@ -1405,21 +1565,26 @@ h4 {
   }
 
   #buy-option {
-    width: 50%;
+    width: 100%;
   }
 
   #buy-option-btn {
     width: 100%;
     height: 50px;
-    background-image: linear-gradient(to top, #2d3047, #7d81a2);
+    background-image: linear-gradient(to top, #87a23e, #6c9a4d);
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: bold;
     border: 1px rgba(45, 48, 71, 0.2) solid;
   }
+  #buy-option-btn:hover {
+    background-image: linear-gradient(to top, #b8cf7a, #98b783);
+
+    cursor: pointer;
+  }
 
   #sell-option {
-    width: 50%;
+    width: 40%;
   }
 
   #sell-option-btn {
@@ -1427,6 +1592,9 @@ h4 {
     height: 50px;
   }
 
+  #sell-option-btn:hover {
+    cursor: pointer;
+  }
   /* Table Styling */
 
   .trade-container select {
@@ -1473,19 +1641,23 @@ h4 {
   #momo-wallet {
     width: 50%;
   }
-
   #buy-btn {
     width: 50%;
-    height: 2.5rem;
+    height: 3.5rem;
     margin-left: 25%;
     margin-right: auto;
-    background-image: linear-gradient(to top, rgb(38, 195, 88), #8aea92);
-    font-size: 1.2rem;
+    background-image: linear-gradient(to top, rgb(29, 159, 71), #8aea92);
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(120, 149, 135);
   }
 
+  #buy-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: saturate(150%);
+  }
   .momo-networks {
     text-align: center;
   }
@@ -1506,10 +1678,31 @@ h4 {
     margin-bottom: 10px;
   }
 
+  #trade-price-head {
+    text-align: center;
+    margin-bottom: 1%;
+  }
 
+  #trade-price-table {
+    width: 80%;
 
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 3%;
+  }
 
-    /*ABOUT PAGE*/
+  #trade-price-table td {
+    border: 2px green solid;
+    padding: 1%;
+  }
+
+  .price-heading {
+    background-color: #90f8a0;
+    font-weight: 800;
+  }
+
+  /*ABOUT PAGE*/
   /*ABOUT PAGE*/
   /*ABOUT PAGE*/
 
@@ -1652,11 +1845,7 @@ h4 {
     text-align: center;
   }
 
-
-
   /*LOGIN*/
-
-
 
   .login-background {
     /* background-color: #2d3047; */
@@ -1678,10 +1867,8 @@ h4 {
     margin-right: auto;
   }
 
-
   .greeting-box {
     width: 50%;
-    
   }
 
   .title-message {
@@ -1701,7 +1888,6 @@ h4 {
     width: 50%;
     justify-content: center;
     align-items: center;
-    
   }
 
   .login-box {
@@ -1713,10 +1899,10 @@ h4 {
     text-align: center;
     color: white;
 
-    box-shadow: 3px 3px 15px rgba(121, 112, 178, 0.719), 4px 4px 20px rgb(42, 34, 57);
+    box-shadow: 3px 3px 15px rgba(121, 112, 178, 0.719),
+      4px 4px 20px rgb(42, 34, 57);
 
     padding-bottom: 5%;
-
   }
 
   #password-div {
@@ -1772,16 +1958,34 @@ h4 {
   /*SIGN UP*/
 
   .sign-up-container {
-    margin-top: 100px;
-    margin-left: 1000px;
-    /* margin-right: auto; */
+    margin-top: 20%;
+    margin-left: auto;
+    margin-right: auto;
     border: solid 2px rgb(126, 230, 133);
     background-color: rgba(67, 50, 92, 0.6);
-    width: 40%;
+    width: 70%;
     text-align: center;
     border-radius: 20px;
     padding: 3% 0px;
     position: absolute;
+  }
+
+  .top-container-su {
+    display: flex;
+    margin-bottom: -4%;
+  }
+
+  .top-container-su label {
+    color: rgb(213, 243, 132);
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+  }
+  #name-box {
+    width: 50%;
+  }
+
+  #detail-box {
+    width: 50%;
   }
 
   #sign-up-title {
@@ -1790,32 +1994,38 @@ h4 {
   }
 
   .main-container input {
-    width: 70%;
+    width: 90%;
     height: 2rem;
-    /* margin-bottom: 30px; */
-    border-radius: 10px;
   }
 
   .sign-up-container input {
     margin-bottom: 30px;
   }
 
-  #terms {
-    margin: 0px 2px 0 0;
-    /*padding-right: 0px; */
-    width: 30px;
-    height: 30px;
-    /* margin-top: 50px; */
-    /* margin-top: 1px; */
+  #terms-word {
+    margin-left: -1%;
+    position: relative;
+    right: 25%;
+    top: -4%;
+    color: rgb(213, 243, 132);
+    font-size: 1.5rem;
   }
 
+  #terms {
+    margin: 0px 2px 0 0;
+    padding: 0px;
+    height: 30px;
+    margin-right: 0px;
+  }
+
+  #page {
+    background-color: rgb(33, 25, 35);
+    height: 100%;
+  }
   #terms-div {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 30px;
     margin-bottom: 20px;
-    gap: 2px;
   }
 
   #login-instead {
@@ -1835,6 +2045,8 @@ h4 {
     background-color: #8aea92;
     font-weight: bold;
     cursor: pointer;
+    width: 50%;
+    height: 3rem;
   }
 
   #sign-up-btn:hover {
@@ -1843,20 +2055,23 @@ h4 {
 
   #bg-image {
     width: 100%;
+    opacity: 15%;
+    margin-bottom: 10%;
   }
 
   .main-container {
     display: flex;
-    margin-top: 50px;
+    justify-content: center;
   }
 
   #welcome-message {
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    font-size: 2rem;
-    width: 40%;
+    position: relative;
+
+    top: 10%;
+    font-size: 1.5rem;
     color: #dffe96;
+    margin-left: auto;
+    text-align: center;
   }
 
   #welcome-only {
@@ -1864,10 +2079,110 @@ h4 {
     color: #dffe96;
   }
 
+  /*SELL*/
+  /*SELLL*/
+  /*SELL*/
 
+  .trade-parent-container-sell tr:nth-child(even) {
+    background-color: #eaedcf;
+  }
 
+  .trade-parent-container-sell tr:nth-child(odd) {
+    background-color: #f1d391;
+  }
+
+  .trade-parent-container-sell {
+    background-color: rgb(45, 48, 71, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  .trade-container-sell {
+    width: 100%;
+  }
+
+  #buy-option-sell {
+    width: 40%;
+  }
+
+  #sell-option-sell {
+    width: 100%;
+  }
+
+  #buy-option-btn-sell {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  #sell-option-btn-sell {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #d67d5d, #744c31);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+  }
+
+  #sell-option-btn-sell:hover {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #f78d67, #bc672e);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+    cursor: pointer;
+  }
+
+  /* Table Styling */
+
+  .trade-container select {
+    width: 50%;
+    height: 1.5rem;
+  }
+
+  .trade-container-sell table {
+    width: 100%;
+    padding: 2px;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .trade-container-sell td {
+    width: 15%;
+    padding: 10px;
+  }
+
+  .wallet-box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -2%;
+  }
+
+  .copy-link {
+    margin-top: 2%;
+    margin-bottom: 7%;
+  }
+
+  .copy-link-input {
+    width: 500px;
+    height: 40px;
+    font: 2.5rem;
+    background-color: rgb(245, 177, 177);
+  }
 }
-
 
 @media (min-width: 768px) and (max-width: 1147px) {
   /*NAV BAR*/
@@ -1877,25 +2192,20 @@ h4 {
     margin: 0 0 5%;
     font-size: 1.4rem;
   }
-    #youtube-video {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-      
-      height: 450px;
-      width: 700px;
-      
-      
-    }
-  #tutorial {
-    
+  #youtube-video {
+    margin-left: auto;
     margin-right: auto;
-    background-color:#95a39b;
+    display: block;
+
+    height: 450px;
+    width: 700px;
+  }
+  #tutorial {
+    margin-right: auto;
+    background-color: #95a39b;
     padding: 5%;
     margin-top: -10px;
   }
-
-
 
   nav {
     background-color: #2d3047;
@@ -1918,7 +2228,7 @@ h4 {
     margin-right: auto;
     margin-left: 1%;
     color: #8aea92;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     border: solid 0.5px #8aea92;
     background-color: #2d3047;
     padding: 0 1px;
@@ -1926,9 +2236,7 @@ h4 {
   }
 
   #nav-brand-link {
-    color: #8aea92;
-    /* font-size: 1.8rem; */
-    
+    color: #f5ee9e;
     background-color: #2d3047;
   }
 
@@ -1945,22 +2253,14 @@ h4 {
 
   .nav-link {
     padding: 10px;
-    font-size: 0.88rem;
+    font-size: 1.3rem;
   }
 
   #toggler {
     display: none;
-    /* filter: invert(100%);
-    width: 40px;
-    z-index: 3; */
   }
 
   .humburger-icon {
-    /* width: 50px;
-      position: absolute;
-      top: 20px;
-      right: 40px;
-    cursor: pointer; */
     display: none;
   }
 
@@ -1969,8 +2269,6 @@ h4 {
     flex-direction: row;
     margin-left: auto;
     margin-right: auto;
-  
-    
   }
 
   .nav-container a {
@@ -2088,7 +2386,6 @@ h4 {
   }
 
   #featured-image {
-    /* margin-top: 90px; */
     position: relative;
     width: 120%;
   }
@@ -2101,8 +2398,9 @@ h4 {
   #crypto-img {
     width: 80px;
     position: absolute;
-    top: 400px;
-    left: 450px;
+    top: 300px;
+    left: 350px;
+    opacity: 25%;
   }
 
   #featured-message {
@@ -2111,19 +2409,18 @@ h4 {
     top: 15%;
     z-index: 0;
     font-size: 2rem;
-    margin-top: 4%;
+    margin-top: -2%;
     margin-left: 2%;
     padding: 2%;
     text-align: left;
     border: solid rgba(45, 48, 71, 0.08) 5px;
-    /* z-index: 1; */
   }
 
   .large-title {
     font-weight: bold;
     color: #50cb5af3;
     text-shadow: 1px 1px #2d3047;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
 
   #momo-title {
@@ -2133,18 +2430,18 @@ h4 {
   .small-title {
     margin: 0;
     color: #2d3047;
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
   .trade-btn {
     position: absolute;
-    top: 450px;
+    top: 370px;
     margin-left: 5%;
-    width: 100px;
+    width: 200px;
     height: 40px;
     background-color: #8aea92;
     color: #2d3047;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
     border-style: none;
@@ -2345,8 +2642,7 @@ h4 {
     color: #8aea92;
   }
 
-
-/*BUY*/
+  /*BUY*/
   /*BUY*/
   /*BUY*/
 
@@ -2388,21 +2684,26 @@ h4 {
   }
 
   #buy-option {
-    width: 50%;
+    width: 100%;
   }
 
   #buy-option-btn {
     width: 100%;
     height: 50px;
-    background-image: linear-gradient(to top, #2d3047, #7d81a2);
+    background-image: linear-gradient(to top, #87a23e, #6c9a4d);
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: bold;
     border: 1px rgba(45, 48, 71, 0.2) solid;
   }
+  #buy-option-btn:hover {
+    background-image: linear-gradient(to top, #b8cf7a, #98b783);
+
+    cursor: pointer;
+  }
 
   #sell-option {
-    width: 50%;
+    width: 40%;
   }
 
   #sell-option-btn {
@@ -2410,6 +2711,9 @@ h4 {
     height: 50px;
   }
 
+  #sell-option-btn:hover {
+    cursor: pointer;
+  }
   /* Table Styling */
 
   .trade-container select {
@@ -2456,17 +2760,22 @@ h4 {
   #momo-wallet {
     width: 50%;
   }
-
   #buy-btn {
     width: 50%;
-    height: 2.5rem;
+    height: 3.3rem;
     margin-left: 25%;
     margin-right: auto;
-    background-image: linear-gradient(to top, rgb(38, 195, 88), #8aea92);
+    background-image: linear-gradient(to top, rgb(29, 159, 71), #8aea92);
     font-size: 1.2rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(120, 149, 135);
+  }
+
+  #buy-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: saturate(150%);
   }
 
   .momo-networks {
@@ -2489,11 +2798,31 @@ h4 {
     margin-bottom: 10px;
   }
 
+  #trade-price-head {
+    text-align: center;
+    margin-bottom: 1%;
+  }
 
+  #trade-price-table {
+    width: 80%;
 
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 3%;
+  }
 
+  #trade-price-table td {
+    border: 2px green solid;
+    padding: 1%;
+  }
 
-    /*ABOUT PAGE*/
+  .price-heading {
+    background-color: #90f8a0;
+    font-weight: 800;
+  }
+
+  /*ABOUT PAGE*/
   /*ABOUT PAGE*/
   /*ABOUT PAGE*/
 
@@ -2516,8 +2845,6 @@ h4 {
   }
 
   #logo-container {
-    /* position:absolute;
-  top: 600px; */
     display: flex;
     align-content: center;
     left: 90px;
@@ -2532,7 +2859,6 @@ h4 {
   #cedii-logo {
     color: #8aea92;
     font-size: 70px;
-    /* margin: 20px; */
     display: inline-block;
     align-self: center;
   }
@@ -2610,7 +2936,6 @@ h4 {
     gap: 30%;
     margin: 5% auto;
     width: 90%;
-    
   }
 
   .bottom-container {
@@ -2638,17 +2963,12 @@ h4 {
     text-align: center;
   }
 
-
-
-
-
   /*LOGIN*/
 
   .login-background {
     background-color: #444a72;
     height: 100vhmax;
     padding-top: 150px;
-    
   }
 
   .login-image {
@@ -2665,9 +2985,7 @@ h4 {
     width: 80%;
     justify-content: center;
     margin-bottom: 20%;
-    
   }
-
 
   .greeting-box {
     width: 100%;
@@ -2692,10 +3010,6 @@ h4 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 2%; */
-    /* padding-bottom: 5%; */
-    
-    
   }
 
   .login-box {
@@ -2706,11 +3020,10 @@ h4 {
     border-radius: 25px;
     text-align: center;
     color: white;
-    box-shadow: 3px 3px 15px rgba(121, 112, 178, 0.719), 4px 4px 20px rgb(42, 34, 57);
+    box-shadow: 3px 3px 15px rgba(121, 112, 178, 0.719),
+      4px 4px 20px rgb(42, 34, 57);
 
     padding-bottom: 5%;
-
-
   }
 
   #password-div {
@@ -2751,7 +3064,6 @@ h4 {
 
   .action-link {
     color: #8aea92;
-  
   }
 
   .copyright-login {
@@ -2760,14 +3072,236 @@ h4 {
     margin-bottom: 0;
     margin-top: 5%;
     color: aliceblue;
-    
   }
 
+  /*SIGN UP*/
+  /*SIGN UP*/
+  /*SIGN UP*/
 
+  .sign-up-container {
+    margin-top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 2px rgb(126, 230, 133);
+    background-color: rgba(49, 28, 81, 0.6);
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+    padding: 3% 0px;
+    position: absolute;
+  }
 
+  .top-container-su {
+    display: flex;
+    margin-bottom: -4%;
+    flex-direction: column;
+    justify-content: center;
+  }
 
+  .top-container-su label {
+    color: rgb(213, 243, 132);
+    font-size: 1.5rem;
+    margin-bottom: 3%;
+  }
 
+  #sign-up-title {
+    color: #8aea92;
+    margin-bottom: 50px;
+  }
 
+  .main-container input {
+    width: 80%;
+    height: 2rem;
+  }
+
+  .sign-up-container input {
+    margin-bottom: 30px;
+  }
+
+  #terms-word {
+    margin-left: -1%;
+    position: relative;
+    right: 20%;
+    top: -4%;
+    color: rgb(213, 243, 132);
+    font-size: 1.5rem;
+  }
+
+  #terms {
+    margin: 0px 2px 0 0;
+    padding: 0px;
+    height: 30px;
+    margin-right: 0px;
+  }
+
+  #page {
+    background-color: rgb(33, 25, 35);
+  }
+
+  #page2 {
+    height: 70vh;
+    background-color: rgb(33, 25, 35);
+  }
+  #terms-div {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  #login-instead {
+    color: #8aea92;
+  }
+
+  #login-instead a {
+    color: rgb(223, 191, 252);
+    text-decoration: none;
+  }
+
+  #apple-icon {
+    width: 50px;
+  }
+
+  #sign-up-btn {
+    background-color: #8aea92;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    height: 3rem;
+  }
+
+  #sign-up-btn:hover {
+    background-color: #ddfae0;
+  }
+
+  #bg-image {
+    width: 100%;
+    opacity: 20%;
+    transform: scale(3);
+    margin-top: 500px;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  #welcome-message {
+    position: relative;
+
+    top: 10%;
+    font-size: 1.5rem;
+    color: #dffe96;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  #welcome-only {
+    margin-bottom: 20px;
+    color: #dffe96;
+  }
+
+  /*SELL*/
+  /*SELLL*/
+  /*SELL*/
+  .trade-parent-container-sell tr:nth-child(even) {
+    background-color: #eaedcf;
+  }
+
+  .trade-parent-container-sell tr:nth-child(odd) {
+    background-color: #f1d391;
+  }
+
+  .trade-parent-container-sell {
+    background-color: rgb(45, 48, 71, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
+
+  .trade-container-sell {
+    width: 100%;
+  }
+
+  #buy-option-sell {
+    width: 40%;
+  }
+
+  #buy-option-btn-sell {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  #sell-option-sell {
+    width: 100%;
+  }
+
+  #sell-option-btn-sell {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #d67d5d, #744c31);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+  }
+
+  #sell-option-btn-sell:hover {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #f78d67, #bc672e);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+    cursor: pointer;
+  }
+
+  /* Table Styling */
+
+  .trade-container-sell select {
+    width: 50%;
+    height: 1.5rem;
+  }
+
+  .trade-container-sell table {
+    width: 100%;
+    padding: 2px;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .trade-container-sell td {
+    width: 15%;
+    padding: 10px;
+  }
+
+  .wallet-box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -2%;
+  }
+
+  .copy-link {
+    margin-top: 2%;
+    margin-bottom: 7%;
+  }
+
+  .copy-link-input {
+    width: 500px;
+    height: 40px;
+    font: 2.5rem;
+    background-color: rgb(245, 177, 177);
+  }
 }
 
 @media (max-width: 767px) {
@@ -2778,24 +3312,19 @@ h4 {
     margin: 0 0 5%;
     font-size: 1.2rem;
   }
-    #youtube-video {
-      margin-left: auto;
-      margin-right: auto;
-      display: block;
-     width: 500px;
-      height: 300px;
-      
-      
-    }
-  #tutorial {
-    
+  #youtube-video {
+    margin-left: auto;
     margin-right: auto;
-    background-color:#95a39b;
+    display: block;
+    width: 500px;
+    height: 300px;
+  }
+  #tutorial {
+    margin-right: auto;
+    background-color: #95a39b;
     padding: 5%;
     margin-top: -10px;
   }
-
-
 
   nav {
     background-color: #2d3047;
@@ -2806,14 +3335,10 @@ h4 {
     top: 0;
     z-index: 2;
     padding-bottom: 2%;
-    
-  
   }
 
   .nav-container {
     display: flex;
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
     flex-direction: column;
     justify-content: center;
     z-index: 2;
@@ -2823,21 +3348,18 @@ h4 {
     margin-right: auto;
     margin-left: auto;
     color: #8aea92;
-    font-size: 1.1rem;
+    font-size: 1.7rem;
     border: solid 0.5px #8aea92;
     background-color: #2d3047;
     padding: 0 1px;
     cursor: pointer;
-    /* transform: translate(-300px, 6px); */
     position: relative;
     right: 40%;
     top: 20px;
   }
 
   #nav-brand-link {
-    color: #8aea92;
-    /* font-size: 1.8rem; */
-    
+    color: #f5ee9e;
     background-color: #2d3047;
   }
 
@@ -2851,8 +3373,6 @@ h4 {
     gap: 1rem;
     padding-left: 0;
     display: flex;
-
-    /* margin:  2px auto; */
   }
 
   #toggler {
@@ -2865,7 +3385,7 @@ h4 {
 
   .nav-link {
     padding: 10px 100px;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-left: 10px;
     margin-right: auto;
   }
@@ -2886,13 +3406,12 @@ h4 {
   #nav-cta {
     display: none;
 
-    
     flex-direction: row;
     margin-left: auto;
-    margin-right: auto; 
+    margin-right: auto;
     margin-top: 0;
-     align-self: flex-end;
-     position: relative;
+    align-self: flex-end;
+    position: relative;
   }
 
   .nav-container a {
@@ -2918,8 +3437,9 @@ h4 {
 
   .wrapper {
     position: static;
-    height: -10px;
+    height: 30px;
     margin-left: 2%;
+    margin-bottom: 15px;
 
     transform: translate(-10%, -10%);
   }
@@ -2940,12 +3460,14 @@ h4 {
     font-weight: bold;
     font-size: 20px;
     transition: all 0.5s linear;
+    position: absolute;
+    right: 35%;
   }
 
   .searchbtn {
     position: absolute;
-    top: 1px;
-    right: -1px;
+    top: 0;
+    right: 35%;
     background: #fff;
     width: 30px;
     height: 30px;
@@ -2964,7 +3486,7 @@ h4 {
     transition: all 0.5s 0.6s linear;
   }
 
-  /*jquery class*/
+  /* jquery class */
   .searchbtn.bg-green {
     background: #42be11;
     transition: all 0.2s linear;
@@ -2976,9 +3498,8 @@ h4 {
   }
 
   .searchbox .input.active-width {
-    width: 110px;
+    width: 80px;
   }
-
   #log-in,
   #sign-up {
     margin-right: 10px;
@@ -3010,7 +3531,6 @@ h4 {
   }
 
   #featured-image {
-    /* margin-top: 90px; */
     position: relative;
     width: 120%;
   }
@@ -3023,8 +3543,10 @@ h4 {
   #crypto-img {
     width: 80px;
     position: absolute;
-    top: 400px;
-    left: 450px;
+    top: 220px;
+    left: 250px;
+    opacity: 30%;
+    z-index: 0;
   }
 
   #featured-message {
@@ -3033,20 +3555,18 @@ h4 {
     top: 15%;
     z-index: 0;
     font-size: 2rem;
-    margin-top: 4%;
+    margin-top: -3%;
     margin-left: 2%;
     padding: 2%;
     text-align: left;
     border: solid rgba(45, 48, 71, 0.08) 5px;
-  /* display: none; */
-    
   }
 
   .large-title {
     font-weight: bold;
     color: #50cb5af3;
     text-shadow: 1px 1px #2d3047;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   #momo-title {
@@ -3056,12 +3576,12 @@ h4 {
   .small-title {
     margin: 0;
     color: #2d3047;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .trade-btn {
     position: absolute;
-    top: 450px;
+    top: 370px;
     margin-left: 5%;
     width: 100px;
     height: 40px;
@@ -3239,7 +3759,6 @@ h4 {
     text-align: center;
     padding-bottom: 1%;
     padding-top: 4%;
-   
   }
 
   footer table {
@@ -3271,9 +3790,7 @@ h4 {
     color: #8aea92;
   }
 
-
-
-/*BUY*/
+  /*BUY*/
   /*BUY*/
   /*BUY*/
 
@@ -3315,21 +3832,26 @@ h4 {
   }
 
   #buy-option {
-    width: 50%;
+    width: 100%;
   }
 
   #buy-option-btn {
     width: 100%;
     height: 50px;
-    background-image: linear-gradient(to top, #2d3047, #7d81a2);
+    background-image: linear-gradient(to top, #87a23e, #6c9a4d);
     color: #ffffff;
     font-size: 1.2rem;
     font-weight: bold;
     border: 1px rgba(45, 48, 71, 0.2) solid;
   }
+  #buy-option-btn:hover {
+    background-image: linear-gradient(to top, #b8cf7a, #98b783);
+
+    cursor: pointer;
+  }
 
   #sell-option {
-    width: 50%;
+    width: 40%;
   }
 
   #sell-option-btn {
@@ -3337,6 +3859,9 @@ h4 {
     height: 50px;
   }
 
+  #sell-option-btn:hover {
+    cursor: pointer;
+  }
   /* Table Styling */
 
   .trade-container select {
@@ -3383,17 +3908,22 @@ h4 {
   #momo-wallet {
     width: 50%;
   }
-
   #buy-btn {
     width: 50%;
-    height: 2.5rem;
+    height: 3rem;
     margin-left: 25%;
     margin-right: auto;
-    background-image: linear-gradient(to top, rgb(38, 195, 88), #8aea92);
-    font-size: 1.2rem;
+    background-image: linear-gradient(to top, rgb(29, 159, 71), #8aea92);
+    font-size: 1.1rem;
     font-weight: bold;
     color: rgb(255, 255, 255);
     border: 1px solid rgb(120, 149, 135);
+  }
+
+  #buy-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    filter: saturate(150%);
   }
 
   .momo-networks {
@@ -3416,10 +3946,31 @@ h4 {
     margin-bottom: 10px;
   }
 
+  #trade-price-head {
+    text-align: center;
+    margin-bottom: 1%;
+  }
 
+  #trade-price-table {
+    width: 80%;
 
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    margin-bottom: 3%;
+  }
 
-    /*ABOUT PAGE*/
+  #trade-price-table td {
+    border: 2px green solid;
+    padding: 1%;
+  }
+
+  .price-heading {
+    background-color: #90f8a0;
+    font-weight: 800;
+  }
+
+  /*ABOUT PAGE*/
   /*ABOUT PAGE*/
   /*ABOUT PAGE*/
 
@@ -3442,12 +3993,9 @@ h4 {
   }
 
   #logo-container {
-    /* position:absolute;
-  top: 600px; */
     display: flex;
     align-content: center;
     left: 90px;
-    
   }
 
   #cedii-logo-sign {
@@ -3459,7 +4007,6 @@ h4 {
   #cedii-logo {
     color: #8aea92;
     font-size: 50px;
-    /* margin: 20px; */
     display: inline-block;
     align-self: center;
   }
@@ -3470,7 +4017,6 @@ h4 {
     position: absolute;
     top: 20%;
     left: 80px;
-    
   }
 
   #cover-feature-container {
@@ -3539,7 +4085,6 @@ h4 {
     gap: 2rem;
     margin-top: 20%;
     width: 80%;
-  
   }
 
   .bottom-container {
@@ -3567,17 +4112,14 @@ h4 {
     text-align: center;
   }
 
-
-/*LOGIN*/
-/*LOGIN*/
-/*LOGIN*/
-
+  /*LOGIN*/
+  /*LOGIN*/
+  /*LOGIN*/
 
   .login-background {
     background-color: #4d547e;
     height: 100vhmax;
     padding-top: 200px;
-    
   }
 
   .login-image {
@@ -3594,9 +4136,7 @@ h4 {
     width: 80%;
     justify-content: center;
     margin-bottom: 20%;
-    
   }
-
 
   .greeting-box {
     width: 100%;
@@ -3621,10 +4161,6 @@ h4 {
     width: 100%;
     justify-content: center;
     align-items: center;
-    /* margin-bottom: 2%; */
-    /* padding-bottom: 5%; */
-    
-    
   }
 
   .login-box {
@@ -3635,11 +4171,10 @@ h4 {
     border-radius: 25px;
     text-align: center;
     color: white;
-    box-shadow: 3px 3px 15px rgba(121, 112, 178, 0.719), 4px 4px 20px rgb(42, 34, 57);
+    box-shadow: 3px 3px 15px rgba(121, 112, 178, 0.719),
+      4px 4px 20px rgb(42, 34, 57);
 
     padding-bottom: 5%;
-
-
   }
 
   #password-div {
@@ -3680,7 +4215,6 @@ h4 {
 
   .action-link {
     color: #8aea92;
-  
   }
 
   .copyright-login {
@@ -3689,27 +4223,36 @@ h4 {
     margin-bottom: 0;
     margin-top: 5%;
     color: aliceblue;
-    
   }
-
-
-
 
   /*SIGN UP*/
   /*SIGN UP*/
   /*SIGN UP*/
 
   .sign-up-container {
-    margin-top: 100px;
-    margin-left: 1000px;
-    /* margin-right: auto; */
+    margin-top: 55%;
+    margin-left: auto;
+    margin-right: auto;
     border: solid 2px rgb(126, 230, 133);
-    background-color: rgba(67, 50, 92, 0.6);
-    width: 40%;
+    background-color: rgba(49, 28, 81, 0.6);
+    width: 70%;
     text-align: center;
     border-radius: 20px;
     padding: 3% 0px;
     position: absolute;
+  }
+
+  .top-container-su {
+    display: flex;
+    margin-bottom: -4%;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .top-container-su label {
+    color: rgb(213, 243, 132);
+    font-size: 1.5rem;
+    margin-bottom: 3%;
   }
 
   #sign-up-title {
@@ -3718,32 +4261,42 @@ h4 {
   }
 
   .main-container input {
-    width: 70%;
+    width: 80%;
     height: 2rem;
-    /* margin-bottom: 30px; */
-    border-radius: 10px;
   }
 
   .sign-up-container input {
     margin-bottom: 30px;
   }
 
-  #terms {
-    margin: 0px 2px 0 0;
-    /*padding-right: 0px; */
-    width: 30px;
-    height: 30px;
-    /* margin-top: 50px; */
-    /* margin-top: 1px; */
+  #terms-word {
+    margin-left: -1%;
+    position: relative;
+    right: 15%;
+    top: -4%;
+    color: rgb(213, 243, 132);
+    font-size: 1.5rem;
   }
 
+  #terms {
+    margin: 0px 2px 0 0;
+    padding: 0px;
+    height: 30px;
+    margin-right: 0px;
+  }
+
+  #page {
+    background-color: rgb(33, 25, 35);
+  }
+
+  #page2 {
+    height: 20vh;
+    background-color: rgb(33, 25, 35);
+  }
   #terms-div {
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin-top: 30px;
     margin-bottom: 20px;
-    gap: 2px;
   }
 
   #login-instead {
@@ -3763,6 +4316,8 @@ h4 {
     background-color: #8aea92;
     font-weight: bold;
     cursor: pointer;
+    width: 50%;
+    height: 3rem;
   }
 
   #sign-up-btn:hover {
@@ -3771,20 +4326,26 @@ h4 {
 
   #bg-image {
     width: 100%;
+    opacity: 20%;
+    margin-bottom: 50%;
+    transform: scale(3);
+    margin-top: 500px;
   }
 
   .main-container {
     display: flex;
-    margin-top: 50px;
+    /* margin-top: -50px; */
+    justify-content: center;
   }
 
   #welcome-message {
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    font-size: 2rem;
-    width: 40%;
+    position: relative;
+
+    top: 15%;
+    font-size: 1.5rem;
     color: #dffe96;
+    margin-left: auto;
+    text-align: center;
   }
 
   #welcome-only {
@@ -3792,12 +4353,106 @@ h4 {
     color: #dffe96;
   }
 
+  /*SELL*/
+  /*SELLL*/
+  /*SELL*/
+  .trade-parent-container-sell tr:nth-child(even) {
+    background-color: #eaedcf;
+  }
 
+  .trade-parent-container-sell tr:nth-child(odd) {
+    background-color: #f1d391;
+  }
 
+  .trade-parent-container-sell {
+    background-color: rgb(45, 48, 71, 0.1);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
+    margin-bottom: 50px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+  }
 
+  .trade-container-sell {
+    width: 100%;
+  }
+
+  #buy-option-sell {
+    width: 40%;
+  }
+
+  #buy-option-btn-sell {
+    width: 100%;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  #sell-option-sell {
+    width: 100%;
+  }
+
+  #sell-option-btn-sell {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #d67d5d, #744c31);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+  }
+
+  #sell-option-btn-sell:hover {
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to top, #f78d67, #bc672e);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 1px rgba(45, 48, 71, 0.2) solid;
+    cursor: pointer;
+  }
+
+  /* Table Styling */
+
+  .trade-container-sell select {
+    width: 50%;
+    height: 1.5rem;
+  }
+
+  .trade-container-sell table {
+    width: 100%;
+    padding: 2px;
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  .trade-container-sell td {
+    width: 15%;
+    padding: 10px;
+  }
+
+  .wallet-box {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: -2%;
+  }
+
+  .copy-link {
+    margin-top: 2%;
+    margin-bottom: 7%;
+  }
+
+  .copy-link-input {
+    width: 500px;
+    height: 40px;
+    font: 2.5rem;
+    background-color: rgb(245, 177, 177);
+  }
 }
-
-
-
-
-

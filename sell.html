@@ -68,19 +68,19 @@
       alt="icon"
     />
 
-    <h3 id="exchange-title">EXCHANGE</h3>
+    <h3 id="exchange-title">SELL</h3>
 
-    <div class="trade-parent-container">
-      <div class="trade-container">
+    <div class="trade-parent-container-sell">
+      <div class="trade-container-sell">
         <div class="trade-option">
-          <form action="buy.html" id="buy-option">
-            <input type="submit" value="BUY" id="buy-option-btn" />
-          </form>
-
-          <form action="sell.html" id="sell-option">
-            <input type="submit" value="SELL" id="sell-option-btn" />
-          </form>
-        </div>
+            <form action="buy.html" id="buy-option-sell">
+              <input type="submit" value="BUY" id="buy-option-btn-sell" />
+            </form>
+  
+            <form action="sell.html" id="sell-option-sell">
+              <input type="submit" value="SELL" id="sell-option-btn-sell" />
+            </form>
+          </div>
 
         <form action="">
           <table cellspacing="10px" class="">
@@ -118,6 +118,9 @@
               </td>
             </tr>
 
+
+
+            
             <tr>
               <td><label for="amount" class="values">Amount</label><br /></td>
               <td colspan="2" id="ghc">
@@ -139,10 +142,16 @@
                 />
               </td>
             </tr>
+            
+            
 
+
+            
+
+            
             <tr>
               <td>
-                <label for="momo-networks" class="values">Momo Network</label
+                <label for="momo-networks" class="values">Momo Recipient Network</label
                 ><br />
               </td>
               <td class="momo-networks">
@@ -196,10 +205,13 @@
               <td></td>
             </tr>
 
+
+           
+
             <tr>
               <td>
                 <label for="momo-wallet" class="values"
-                  >Momo Payment number</label
+                  >Momo Recipient Number</label
                 >
               </td>
               <td colspan="4">
@@ -214,36 +226,33 @@
                 /><br />
               </td>
             </tr>
+            
+
+
             <tr>
-              <td>
-                <label for="crypto-wallet" class="values"
-                  >Recipient Wallet Address</label
-                >
-              </td>
-              <td colspan="4">
-                <input
-                  class="trade-inputs wallet-inputs"
-                  type="text"
-                  id="crypto-wallet"
-                  placeholder="Enter Crypto Wallet Address"
-                /><br />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <label for="crypto-wallet" class="values"
-                  >Confirm Wallet Address</label
-                >
-              </td>
-              <td colspan="4">
-                <input
-                  class="trade-inputs wallet-inputs"
-                  type="text"
-                  id="crypto-wallet"
-                  placeholder="Confirm Cryto Wallet Address"
-                /><br />
-              </td>
-            </tr>
+                <td>
+                  <label for="momo-wallet" class="values"
+                    >Confirm Momo Recipient Number</label
+                  >
+                </td>
+                <td colspan="4">
+                  <input
+                    maxlength="10"
+                    minlength="10"
+                    class="trade-inputs wallet-inputs"
+                    id="momo-wallet"
+                    type="tel"
+                    id="momo-wallet"
+                    placeholder="Eg. 0244000000"
+                  /><br />
+                </td>
+              </tr>
+              
+             
+
+
+
+           
             <tr>
               <td>
                 <label for="trade-auth" class="values">Password</label>
@@ -262,14 +271,29 @@
               <td>
                 <label for="charge" class="values">Transfer charges</label>
               </td>
-              <td colspan="4">7.08%</td>
+              <td colspan="4">6.61%</td>
             </tr>
           </table>
 
-          <input class="trade-inputs" id="buy-btn" type="submit" value="NEXT" />
+          <input class="trade-inputs" id="buy-btn" type="submit" value="SELL" />
         </form>
       </div>
     </div>
+
+
+    
+    <div class="wallet-box">
+    <h4>Copy our wallet Address below and send the qouted amount of crypto to it and click on NEXT</h4>
+        <div class="copy-link">
+            <label for="copy-link-input">Wallet Address:</label>
+            <input type="text" class="copy-link-input" value="muVVtdpziEYXhG8N9JRA4kGgzwCDm5pkYf">
+            <button type="button" class="copy-link-button">
+                <i class="fa-solid fa-copy fa-2x"></i>
+            </button>
+        </div>
+    </div>
+    
+
 
     <div class="trade-price-box">
       <h3 id="trade-price-head">Live Price</h3>
@@ -282,23 +306,23 @@
         <tr>
           <td id="bitoin-coin">Bitcoin</td>
           <td id="bitoin-price">329254.56</td>
-          <td>-12%</td>
+          <td>+9%</td>
         </tr>
         <tr>
           <td id="ethereum-coin">Ethereum</td>
-          <td id="ethereum-price">22182.26</td>
-          <td>+0.9%</td>
+          <td id="ethereum-price">22151.86</td>
+          <td>+0.6%</td>
         </tr>
         <tr>
           <td id="doge-coin">Dogecoin</td>
-          <td id="doge-price">0.90</td>
-          <td>+10.06%</td>
+          <td id="doge-price">0.86</td>
+          <td>-7.16%</td>
         </tr>
 
         <tr>
           <td id="tether-coin">Tether</td>
-          <td id="tether-price">12.26</td>
-          <td>-0.07%</td>
+          <td id="tether-price">12.21</td>
+          <td>-0.15%</td>
         </tr>
       </table>
     </div>
@@ -306,8 +330,7 @@
     <div class="caution">
       <h4 class="caution-item">Caution</h4>
       <p class="caution-item">
-        Recipient Wallet Address should match with coin and network type. Using
-        the wrong wallet address could result in permanent loss of assets
+        Make sure to send crypto to the our CORRECT Wallet Address provide above.
       </p>
     </div>
     <p class="copyright">©cedii 2023. Terms and conditions apply.</p>
