@@ -40,15 +40,12 @@ $(".searchbtn").click(function () {
 
         document.getElementById("toggler").style.width = "50px";
 
-        // document.getElementById("featured-message").style.top = "500px";
-
+    
         document.getElementById("nav-cta").style.display = "flex";
 
         document.getElementById("navbar").style.position = "fixed";
       } else {
         document.getElementById("nav-menu").style.display = "none";
-
-        // document.getElementById("featured-message").style.top = "100px";
 
 
         document.getElementById("toggler").style.width = "40px";
