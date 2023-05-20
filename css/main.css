@@ -21,6 +21,18 @@ h4 {
   margin: 0;
 }
 
+.social-icon {
+  color: white;
+}
+
+.social-icon:hover {
+  color:#3c9043;
+}
+
+.social-icon-b {
+  color: #2d3047;
+}
+
 @media (min-width: 1494px) {
   /*NAV BAR*/
   #video-title {
